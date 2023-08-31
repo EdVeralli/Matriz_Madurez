@@ -1,0 +1,184 @@
+nombre_pregunta,codigos_categorias_2,codigo,categoria
+p1_recop_dat,1- Si,1,Si
+p1_recop_dat,2- No,2,No
+p1_recop_dat,3- No aplica porque no está dentro de las tareas recopilar datos,3,No aplica porque no está dentro de las tareas recopilar datos
+p1_recop_dat,99- No sabe,99,No sabe
+p2_bases_dat,1- Si,1,Si
+p2_bases_dat,2- No,2,No
+p2_bases_dat,99- No sabe,99,No sabe
+p3_control_base,1- Lo hace un equipo interno (que forma parte del organismo),1,Lo hace un equipo interno (que forma parte del organismo)
+p3_control_base,2- Lo hace un equipo externo (que no forma parte del organismo),2,Lo hace un equipo externo (que no forma parte del organismo)
+p3_control_base,3- Lo hace un equipo interno y un equipo externo,3,Lo hace un equipo interno y un equipo externo
+p3_control_base,4- No aplica porque no está dentro de las tareas hacer controles en la base de datos,4,No aplica porque no está dentro de las tareas hacer controles en la base de datos
+p3_control_base,99- No sabe,99,No sabe
+p4_integr_dat,1- Si,1,Si
+p4_integr_dat,2- No,2,No
+p4_integr_dat,3- No aplica porque no está dentro de las tareas integrar los datos,3,No aplica porque no está dentro de las tareas integrar los datos
+p4_integr_dat,99- No sabe,99,No sabe
+p5_tec_integr_dat,1- Si,1,Si
+p5_tec_integr_dat,2- No,2,No
+p5_tec_integr_dat,3- No aplica porque no está dentro de las tareas integrar los datos,3,No aplica porque no está dentro de las tareas integrar los datos
+p5_tec_integr_dat,99- No sabe,99,No sabe
+p6_documen_pol_int,1- Si,1,Si
+p6_documen_pol_int,2- No,2,No
+p6_documen_pol_int,3- No aplica porque no está dentro de las tareas integrar datos,3,No aplica porque no está dentro de las tareas integrar datos
+p6_documen_pol_int,99- No sabe,99,No sabe
+p7_area_cienc_dat,1- Si,1,Si
+p7_area_cienc_dat,2- No,2,No
+p7_area_cienc_dat,3- No aplica porque no está dentro de las tareas hacer ciencia de datos,3,No aplica porque no está dentro de las tareas hacer ciencia de datos
+p7_area_cienc_dat,99- No sabe,99,No sabe
+p8_apli_tec_ciencia_dat,1- Si,1,Si
+p8_apli_tec_ciencia_dat,2- No,2,No
+p8_apli_tec_ciencia_dat,3- No aplica porque no está dentro de las tareas hacer ciencia de datos,3,No aplica porque no está dentro de las tareas hacer ciencia de datos
+p8_apli_tec_ciencia_dat,99- No sabe,99,No sabe
+p9_herra_vis_dat,1- Si,1,Si
+p9_herra_vis_dat,2- No,2,No
+p9_herra_vis_dat,3- No aplica porque no está dentro de las tareas hacer ciencia de datos,3,No aplica porque no está dentro de las tareas hacer ciencia de datos
+p9_herra_vis_dat,99- No sabe,99,No sabe
+p10_apli_pred,1- Si,1,Si
+p10_apli_pred,2- No,2,No
+p10_apli_pred,3- No aplica porque no está dentro de las tareas del área aplicar estas técnicas,3,No aplica porque no está dentro de las tareas del área aplicar estas técnicas
+p10_apli_pred,99- No sabe,99,No sabe
+p11_documen_proy_cie_dat,1- Si,1,Si
+p11_documen_proy_cie_dat,2- No,2,No
+p11_documen_proy_cie_dat,3- No aplica porque no está dentro de las tareas del área aplicar estas técnicas,3,No aplica porque no está dentro de las tareas del área aplicar estas técnicas
+p11_documen_proy_cie_dat,99- No sabe,99,No sabe
+p12_tien_report,1- Si,1,Si
+p12_tien_report,2- No,2,No
+p12_tien_report,3- No aplica porque no está dentro de las tareas del área hacer reportes sobre los datos,3,No aplica porque no está dentro de las tareas del área hacer reportes sobre los datos
+p12_tien_report,99- No sabe,99,No sabe
+p13_act_report,1- En forma permanente,1,En forma permanente
+p13_act_report,2- Varias veces al día,2,Varias veces al día
+p13_act_report,3- Algunas veces al mes,3,Algunas veces al mes
+p13_act_report,4- Nunca,4,Nunca
+p13_act_report,99- No sabe,99,No sabe
+p14_forma_act_report,1- De forma manual,1,De forma manual
+p14_forma_act_report,2- De forma automatizada,2,De forma automatizada
+p14_forma_act_report,3- Ninguna,3,Ninguna
+p14_forma_act_report,99- No sabe,99,No sabe
+p15_disp_dat,1- Están disponibles para áreas internas,1,Están disponibles para áreas internas
+p15_disp_dat,2- Están disponibles para áreas externas,2,Están disponibles para áreas externas
+p15_disp_dat,3- Están disponibles para áreas internas y externas,3,Están disponibles para áreas internas y externas
+p15_disp_dat,4- No están disponibles,4,No están disponibles
+p15_disp_dat,99- No sabe,99,No sabe
+p16_lect_dat_stand,1- Todos los datos se pueden leer en alguno/s de los formatos antes mencionados,1,Todos los datos se pueden leer en alguno/s de los formatos antes mencionados
+p16_lect_dat_stand,2- Algunos de los datos se pueden leer en alguno/s de los formatos antes mencionados,2,Algunos de los datos se pueden leer en alguno/s de los formatos antes mencionados
+p16_lect_dat_stand,3- Ninguno de los datos se pueden leer en alguno de los formatos antes mencionados,3,Ninguno de los datos se pueden leer en alguno de los formatos antes mencionados
+p16_lect_dat_stand,4- No aplica porque no está dentro de las tareas del área publicar y/o abrir datos,4,No aplica porque no está dentro de las tareas del área publicar y/o abrir datos
+p16_lect_dat_stand,99- No sabe,99,No sabe
+p17_api_dat,1- Si,1,Si
+p17_api_dat,2- No,2,No
+p17_api_dat,3- No aplica porque no está dentro de las tareas del área publicar y/o abrir datos,3,No aplica porque no está dentro de las tareas del área publicar y/o abrir datos
+p17_api_dat,99- No sabe,99,No sabe
+p18_norm_prot_dat,1- Si Conozco la de CABA y la de Nación,1,Conozco la de CABA y la de Nación
+p18_norm_prot_dat,2- Conozco solo la de CABA,2,Conozco solo la de CABA
+p18_norm_prot_dat,3- Conozco solo la de NACIÓN,3,Conozco solo la de Nación
+p18_norm_prot_dat,4- No conozco ninguna,4,No conozco ninguna
+p18_norm_prot_dat,99- No sabe,99,No sabe
+p19_tiemp_dat,1- Si,1,Si
+p19_tiemp_dat,2- No,2,No
+p19_tiemp_dat,3- No aplica porque no está dentro de las tareas del área definir políticas de protección de datos,3,No aplica porque no está dentro de las tareas del área definir políticas de protección de datos
+p19_tiemp_dat,99- No sabe,99,No sabe
+p20_clasif_dat_sens,1- Si,1,Si
+p20_clasif_dat_sens,2- No,2,No
+p20_clasif_dat_sens,3- No aplica porque no está dentro de las tareas del área definir políticas de protección de datos ni recolectar datos sensibles,3,No aplica porque no está dentro de las tareas del área definir políticas de protección de datos ni recolectar datos sensibles
+p20_clasif_dat_sens,99- No sabe,99,No sabe
+p21_dat_sens_consent,1- Si,1,Si
+p21_dat_sens_consent,2- No,2,No
+p21_dat_sens_consent,3- No aplica porque no está dentro de las tareas del área definir políticas de protección de datos ni recolectar datos sensibles,3,No aplica porque no está dentro de las tareas del área definir políticas de protección de datos ni recolectar datos sensibles
+p21_dat_sens_consent,99- No sabe,99,No sabe
+p22_destr_minim_dat,1- Si,1,Si
+p22_destr_minim_dat,2- No,2,No
+p22_destr_minim_dat,3- No aplica porque no está dentro de las tareas del área la destrucción de los datos,3,No aplica porque no está dentro de las tareas del área la destrucción de los datos
+p22_destr_minim_dat,99- No sabe,99,No sabe
+p23_espac_disc_prot_dat,1- Si,1,Si
+p23_espac_disc_prot_dat,2- No,2,No
+p23_espac_disc_prot_dat,3- No aplica porque no está dentro de las tareas del área definir las políticas de datos,3,No aplica porque no está dentro de las tareas del área definir las políticas de datos
+p23_espac_disc_prot_dat,99- No sabe,99,No sabe
+p24_lineam_pro_dat,1- Si,1,Si
+p24_lineam_pro_dat,2- No,2,No
+p24_lineam_pro_dat,3- No aplica porque no está dentro de las tareas del área definir las políticas de datos,3,No aplica porque no está dentro de las tareas del área definir las políticas de datos
+p24_lineam_pro_dat,99- No sabe,99,No sabe
+p25_roles_dat,1- Si,1,Si
+p25_roles_dat,2- No,2,No
+p25_roles_dat,3- No aplica porque no está dentro de las tareas del área definir roles en relación a los datos,3,No aplica porque no está dentro de las tareas del área definir roles en relación a los datos
+p25_roles_dat,99- No sabe,99,No sabe
+p26_polit_uso_dat,1- Si,1,Si
+p26_polit_uso_dat,2- No,2,No
+p26_polit_uso_dat,3- No aplica porque no está dentro de las tareas del área definir las políticas sobre el uso de los datos,3,No aplica porque no está dentro de las tareas del área definir las políticas sobre el uso de los datos
+p26_polit_uso_dat,99- No sabe,99,No sabe
+p27_documen_cic_v_dat,1- Si,1,Si
+p27_documen_cic_v_dat,2- No,2,No
+p27_documen_cic_v_dat,3- No aplica porque no está dentro de las tareas del área documentar procesos en relación al ciclo de vida de los datos,3,No aplica porque no está dentro de las tareas del área documentar procesos en relación al ciclo de vida de los datos
+p27_documen_cic_v_dat,99- No sabe,99,No sabe
+p28_capac_pers_gobern_dat,1- Si,1,Si
+p28_capac_pers_gobern_dat,2- No,2,No
+p28_capac_pers_gobern_dat,3- No aplica porque no está dentro de las tareas del área definir lineamientos en gobernanza de datos,3,No aplica porque no está dentro de las tareas del área definir lineamientos en gobernanza de datos
+p28_capac_pers_gobern_dat,99- No sabe,99,No sabe
+p29_report_acc_dat,1- Si,1,Si
+p29_report_acc_dat,2- No,2,No
+p29_report_acc_dat,99- No sabe,99,No sabe
+p30_sist_acc_info,1- Si,1,Si
+p30_sist_acc_info,2- No,2,No
+p30_sist_acc_info,99- No sabe,99,No sabe
+p31_revis_cal_dat,1- En forma permanente y regular,1,En forma permanente y regular
+p31_revis_cal_dat,2- Algunas veces al mes,2,Algunas veces al mes
+p31_revis_cal_dat,3- No se hacen controles,3,No se hacen controles
+p31_revis_cal_dat,4- No aplica porque no está dentro de las tareas hacer seguimiento sobre la calidad de los datos,4,No aplica porque no está dentro de las tareas hacer seguimiento sobre la calidad de los datos
+p31_revis_cal_dat,99- No sabe,99,No sabe
+p32_metr_cal_dat,1- Exactitud,1,Exactitud
+p32_metr_cal_dat,2- Completitud,2,Completitud
+p32_metr_cal_dat,3- Csonsitencia,3,Csonsitencia
+p32_metr_cal_dat,4- Actualidad,4,Actualidad
+p32_metr_cal_dat,5- Credibilidad,5,Credibilidad
+p32_metr_cal_dat,6- Pertinencia,6,Pertinencia
+p32_metr_cal_dat,7- Valor agregado,7,Valor agregado
+p32_metr_cal_dat,8- Otros,8,Otros
+p32_metr_cal_dat,9- Ninguno,9,Ninguno
+p32_metr_cal_dat,99- No sabe,99,No sabe
+p33_proc_cal_dat,1- Si,1,Si
+p33_proc_cal_dat,2- No,2,No
+p33_proc_cal_dat,3- No,3,No aplica porque no está dentro de las tareas hacer seguimiento sobre la calidad de los datos
+p33_proc_cal_dat,99- No sabe,99,No sabe
+p34_per_espec_cal_dat,1- Si,1,Si
+p34_per_espec_cal_dat,2- No,2,No
+p34_per_espec_cal_dat,3- No aplica porque no está dentro de las tareas hacer seguimiento sobre la calidad de los datos,3,No aplica porque no está dentro de las tareas hacer seguimiento sobre la calidad de los datos
+p34_per_espec_cal_dat,99- No sabe,99,No sabe
+p35_interc_dat,1- Con áreas internas de la organización,1,Con áreas internas de la organización
+p35_interc_dat,2- Con usuarios externos a la organización,2,Con usuarios externos a la organización
+p35_interc_dat,3- Con áreas internas y con usuarios externos a la organización,3,Con áreas internas y con usuarios externos a la organización
+p35_interc_dat,4- No se intercambian datos,4,No se intercambian datos
+p35_interc_dat,5- No aplica porque no está dentro de las tareas definir políticas de intercambio de datos,5,No aplica porque no está dentro de las tareas definir políticas de intercambio de datos
+p35_interc_dat,99- No sabe,99,No sabe
+p36_mecan_prop_comp_dat,1- Si,1,Si
+p36_mecan_prop_comp_dat,2- No,2,No
+p36_mecan_prop_comp_dat,3- No aplica porque no está dentro de las tareas definir políticas de intercambio de datos,3,No aplica porque no está dentro de las tareas definir políticas de intercambio de datos
+p36_mecan_prop_comp_dat,99- No sabe,99,No sabe
+p37_pers_espec_reut_dat,1- Si,1,Si
+p37_pers_espec_reut_dat,2- No,2,No
+p37_pers_espec_reut_dat,3- No aplica porque no está dentro de las tareas definir políticas de intercambio de datos,3,No aplica porque no está dentro de las tareas definir políticas de intercambio de datos
+p37_pers_espec_reut_dat,99- No sabe,99,No sabe
+p38_model_dat,1- Si,1,Si
+p38_model_dat,2- No,2,No
+p38_model_dat,3- No,3,No aplica porque no está dentro de las tareas definir el modelado de los datos
+p38_model_dat,99- No sabe,99,No sabe
+p39_grad_documen_dat,1- Existen datos pero no hay documentación de descripciones o variables codificadas,1,Existen datos pero no hay documentación de descripciones o variables codificadas
+p39_grad_documen_dat,2- Existe un diccionario de datos (con variables y categorías definidas),2,Existe un diccionario de datos (con variables y categorías definidas)
+p39_grad_documen_dat,"3- Existe un diccionario de datos, que incluye metadatos y las condiciones en las que se capturaron los datos",3,"Existe un diccionario de datos, que incluye metadatos y las condiciones en las que se capturaron los datos"
+p39_grad_documen_dat,"4- Existe un diccionario de datos que incluye metadatos y supuestos realizados en la recolección, qué datos no se recolectaron y potenciales sesgos",4,"Existe un diccionario de datos que incluye metadatos y supuestos realizados en la recolección, qué datos no se recolectaron y potenciales sesgos"
+p39_grad_documen_dat,5- Nada documentados,5,Nada documentados
+p39_grad_documen_dat,6- No aplica porque no está dentro de las tareas definir el modelado de los datos,6,No aplica porque no está dentro de las tareas definir el modelado de los datos
+p39_grad_documen_dat,99- No sabe,99,No sabe
+p40_documen_mod_dat,1- Flujos de datos,1,Flujos de datos
+p40_documen_mod_dat,2- Que datos se necesitan,2,Que datos se necesitan
+p40_documen_mod_dat,3- Cómo serán adquiridos,3,Cómo serán adquiridos
+p40_documen_mod_dat,4- Cómo serán gestionados,4,Cómo serán gestionados
+p40_documen_mod_dat,5- Cómo serán almacenados,5,Cómo serán almacenados
+p40_documen_mod_dat,6- Cómo serán distribuidos,6,Cómo serán distribuidos
+p40_documen_mod_dat,7- Cómo serán utilizados,7,Cómo serán utilizados
+p40_documen_mod_dat,8- No tienen documentación,8,No tienen documentación
+p40_documen_mod_dat,99- No sabe,99,No sabe
+p41_pers_espec_model_dat,1- Si,1,Si
+p41_pers_espec_model_dat,2- No,2,No
+p41_pers_espec_model_dat,3- No aplica porque no está dentro de las tareas definir el modelado de los datos,3,No aplica porque no está dentro de las tareas definir el modelado de los datos
+p41_pers_espec_model_dat,99- No sabe,99,No sabe

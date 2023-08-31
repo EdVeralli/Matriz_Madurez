@@ -1,0 +1,109 @@
+reglas
+p1_recop_dat==1  = 1
+p1_recop_dat==2 | p1_recop_dat==3 | p1_recop_dat==99  = 0
+p2_bases_dat==1  = 1
+p2_bases_dat==2 | p2_bases_dat==99  = 0
+p3_control_base==1  = 0.5
+p3_control_base==2  = 0.5
+p3_control_base==3  = 0.7
+p3_control_base==4 | p3_control_base==99  = 0
+p4_integr_dat==1 = 1
+p4_integr_dat==2 | p4_integr_dat==3 | p4_integr_dat==99  = 0
+p5_tec_integr_dat==1  = 0.7
+p5_tec_integr_dat==2 | p5_tec_integr_dat==3 | p5_tec_integr_dat==99  = 0
+p6_documen_pol_int==1  = 0.6
+p6_documen_pol_int==2 | p6_documen_pol_int==3 | p6_documen_pol_int==99  = 0
+p7_area_cienc_dat==1  = 1.4
+p7_area_cienc_dat==2 | p7_area_cienc_dat==3 | p7_area_cienc_dat==99  = 0
+p8_apli_tec_ciencia_dat==1  = 1
+p8_apli_tec_ciencia_dat==2 | p8_apli_tec_ciencia_dat==3 | p8_apli_tec_ciencia_dat==99  = 0
+p9_herra_vis_dat==1  = 1
+p9_herra_vis_dat==2 | p9_herra_vis_dat==3 | p9_herra_vis_dat==99  = 0
+p10_apli_pred==1  = 0.8
+p10_apli_pred==2 | p10_apli_pred==3 | p10_apli_pred==99  = 0
+p11_documen_proy_cie_dat==1  = 0.8
+p11_documen_proy_cie_dat==2 | p11_documen_proy_cie_dat==3 | p11_documen_proy_cie_dat==99  = 0
+p12_tien_report==1  = 2.5
+p12_tien_report==2 | p12_tien_report==3 | p12_tien_report==99  = 0
+p13_act_report==1 | p13_act_report==2  = 1.5
+p13_act_report==3 = 1
+p13_act_report==4 | p13_act_report==99 = 0
+p14_forma_act_report==1 = 0.6
+p14_forma_act_report==2 = 1
+p14_forma_act_report==3 | p14_forma_act_report==99 = 0
+p15_disp_dat==1 | p15_disp_dat==2  = 1.5
+"p15_disp_dat==3 = 2,5"
+p15_disp_dat==4 | p15_disp_dat==99 = 0
+p16_lect_dat_stand==1 = 1.5
+p16_lect_dat_stand==2 = 1
+p16_lect_dat_stand==3 | p16_lect_dat_stand==4 | p16_lect_dat_stand==99 = 0
+p17_api_dat==1  = 1
+p17_api_dat==2 | p17_api_dat==3 | p17_api_dat==99 = 0
+p18_norm_prot_dat==1 = 1
+p18_norm_prot_dat==2 | p18_norm_prot_dat==3 = 0.5
+p18_norm_prot_dat==4 | p18_norm_prot_dat==99  = 0
+p19_tiemp_dat==1  = 1
+p19_tiemp_dat==2 | p19_tiemp_dat==3 | p19_tiemp_dat==99  = 0
+p20_clasif_dat_sens==1  = 0.8
+p20_clasif_dat_sens==2 | p20_clasif_dat_sens==3 | p20_clasif_dat_sens==99  = 0
+p21_dat_sens_consent==1  = 1
+p21_dat_sens_consent==2 | p21_dat_sens_consent==3 | p21_dat_sens_consent==99  = 0
+p22_destr_minim_dat==1  = 0.4
+p22_destr_minim_dat==2 | p22_destr_minim_dat==3 | p22_destr_minim_dat==99  = 0
+p23_espac_disc_prot_dat==1  = 0.4
+p23_espac_disc_prot_dat==2 | p23_espac_disc_prot_dat==3 | p23_espac_disc_prot_dat==99  = 0
+p24_lineam_pro_dat==1  = 0.4
+p24_lineam_pro_dat==2 | p24_lineam_pro_dat==3 | p24_lineam_pro_dat==99  = 0
+p25_roles_dat==1  = 1.5
+p25_roles_dat==2 | p25_roles_dat==3 | p25_roles_dat==99  = 0
+p26_polit_uso_dat==1  = 1.5
+p26_polit_uso_dat==2 | p26_polit_uso_dat==3 | p26_polit_uso_dat==99 = 0
+p27_documen_cic_v_dat==1  = 1
+p27_documen_cic_v_dat==2 | p27_documen_cic_v_dat==3 | p27_documen_cic_v_dat==99  = 0
+p28_capac_pers_gobern_dat==1  = 1
+p28_capac_pers_gobern_dat==2 | p28_capac_pers_gobern_dat==3 | p28_capac_pers_gobern_dat==99  = 0
+p29_report_acc_dat==1  = 3
+p29_report_acc_dat==2 | p29_report_acc_dat==99  = 0
+p30_sist_acc_info==1  = 2
+p30_sist_acc_info==2 | p30_sist_acc_info==99  = 0
+p31_revis_cal_dat==1 = 1.5
+p31_revis_cal_dat==2 = 0.5
+p31_revis_cal_dat==3 | p31_revis_cal_dat==4 | p31_revis_cal_dat==99  = 0
+"p32_metr_cal_dat ^ ""Exactitud"" p32.1=1"
+"p32_metr_cal_dat ^ ""Completitud"" p32.2=1"
+"p32_metr_cal_dat ^ ""Consistencia"" p32.3=1"
+"p32_metr_cal_dat ^ ""Actualidad"" p32.4=1"
+"p32_metr_cal_dat ^ ""Credibilidad"" p32.5=1"
+"p32_metr_cal_dat ^ ""Pertinencia"" p32.6=1"
+"p32_metr_cal_dat ^ ""Valor agregado"" p32.7=1"
+"p32_metr_cal_dat ^ ""Otros"" p32.8=1"
+"p32_metr_cal_dat ^ ""Ninguno"" p32.9=100"
+"p32_metr_cal_dat ^ ""No sabe"" p32.99=100"
+p33_proc_cal_dat==1  = 1
+p33_proc_cal_dat==2 | p33_proc_cal_dat==3 | p33_proc_cal_dat==99  = 0
+p34_per_espec_cal_dat==1  = 1
+p34_per_espec_cal_dat==2 | p34_per_espec_cal_dat==3 | p34_per_espec_cal_dat==99  = 0
+p35_interc_dat==1 | p35_interc_dat==2 = 1
+p35_interc_dat==3 = 2
+p35_interc_dat==4 | p35_interc_dat==5 | p35_interc_dat==99  = 0
+p36_mecan_prop_comp_dat==1  = 2
+p36_mecan_prop_comp_dat==2 | p36_mecan_prop_comp_dat==3 | p36_mecan_prop_comp_dat==99  = 0
+p37_pers_espec_reut_dat==1  = 1
+p37_pers_espec_reut_dat==2 | p37_pers_espec_reut_dat==3 | p37_pers_espec_reut_dat==99  = 0
+p38_model_dat==1  = 1.5
+p38_model_dat==2 | p38_model_dat==3 | p38_model_dat==99  = 0
+p39_grad_documen_dat==1 = 0.9
+p39_grad_documen_dat==2 = 1.2
+p39_grad_documen_dat==3 | p39_grad_documen_dat==4  = 1.4
+p39_grad_documen_dat==5 | p39_grad_documen_dat==6 | p39_grad_documen_dat==99  = 0
+"p40_documen_mod_dat ^ ""Flujos de datos"" p40.1=1"
+"p40_documen_mod_dat ^ ""Qué datos se necesitan"" p40.2=1"
+"p40_documen_mod_dat ^ ""Cómo serán adquiridos"" p40.3=1"
+"p40_documen_mod_dat ^ ""Cómo serán gestionados"" p40.4=1"
+"p40_documen_mod_dat ^ ""Cómo serán almacenados"" p40.5=1"
+"p40_documen_mod_dat ^ ""Cómo serán distribuidos"" p40.6=1"
+"p40_documen_mod_dat ^ ""Cómo serán utilizados"" p40.7=1"
+"p40_documen_mod_dat ^ ""No tienen documentación"" p40.8=100"
+"p40_documen_mod_dat ^ ""No sabe"" p40.99=100"
+p41_pers_espec_model_dat==1  = 0.8
+p41_pers_espec_model_dat==2 | p41_pers_espec_model_dat==3 | p41_pers_espec_model_dat==99  = 0

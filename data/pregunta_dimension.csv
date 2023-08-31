@@ -1,0 +1,51 @@
+"";"nombre_preg_cuestionario";"n_pregunta";"nombre_preg";"nombre_preg_codigo";"dimension"
+"1";"1- ¿Recopilan datos?";"p1_";"recop_dat";"p1_recop_dat";"Fuente de información/Integración"
+"2";"2- ¿Tinene bases de datos?";"p2_";"bases_dat";"p2_bases_dat";"Fuente de información/Integración"
+"3";"3- ¿Quién controla el y gestiona la base de datos? ";"p3_";"control_base";"p3_control_base";"Fuente de información/Integración"
+"4";"4- ¿Integran los datos de las distintas fuentes que disponen? ";"p4_";"integr_dat";"p4_integr_dat";"Fuente de información/Integración"
+"5";"5- ¿Utilizan alguna tecnología para integrar los datos, de diferentes fuentes y sistemas? 
+(APIs, Middleware, data warehouse)";"p5_";"tec_integr_dat";"p5_tec_integr_dat";"Fuente de información/Integración"
+"6";"6- ¿Tienen documentadas las políticas de integración de datos?";"p6_";"documen_pol_int";"p6_documen_pol_int";"Fuente de información/Integración"
+"7";"7- ¿Tiene un área destinada a ciencia de datos?
+Si responden opción 2 o 99 pasa a preguntas de la siguiente dimensión (Actualidad de Reportes/productos)";"p7_";"area_cienc_dat";"p7_area_cienc_dat";"Ciencia de datos"
+"8";"8- ¿Aplican técnicas estadísticas y modelos matemáticos para analizar los datos?";"p8_";"apli_tec_ciencia_dat";"p8_apli_tec_ciencia_dat";"Ciencia de datos"
+"9";"9- ¿Utilizan herramientas de visualización para crear gráficos y tablas que permitan mostrar el resultado del análisis de los datos? ";"p9_";"herra_vis_dat";"p9_herra_vis_dat";"Ciencia de datos"
+"10";"10- ¿Se desarrollan y entrenan modelos de aprendizaje automático y análisis predictivo para predecir patrones y/o eventos futuros? ";"p10_";"apli_pred";"p10_apli_pred";"Ciencia de datos"
+"11";"11- ¿Tienen documentados los proyectos de ciencia de datos?";"p11_";"documen_proy_cie_dat";"p11_documen_proy_cie_dat";"Ciencia de datos"
+"12";"12- ¿Tienen reportes?
+Si responden opción 2 o 99 pasa a preguntas de la siguiente dimensión (Disponibilización)";"p12_";"tien_report";"p12_tien_report";"Actualidad de Reportes/productos"
+"13";"13- ¿Con qué frecuencia actualizan los reportes?";"p13_";"act_report";"p13_act_report";"Actualidad de Reportes/productos"
+"14";"14- ¿Cuál es la forma de actualización de los reportes?";"p14_";"forma_act_report";"p14_forma_act_report";"Actualidad de Reportes/productos"
+"15";"15- ¿Los datos están disponibles para las áreas que los requieran?
+Si responden opción 2 o 99 pasa a preguntas de la siguiente dimensión (Protección de datos)";"p15_";"disp_dat";"p15_disp_dat";"Disponibilización"
+"16";"16- ¿Los datos se pueden leer usando alguno de los formatos estándares abiertos? 
+Los formatos más comunes y estándar para la lectura de datos abiertos son JSON, CSV, XML y RDF. Sin embargo, depende de cada caso de uso para decidir qué formato es el mejor para su necesidad.";"p16_";"lect_dat_stand";"p16_lect_dat_stand";"Disponibilización"
+"17";"17- ¿Tienen APIS desarrolladas para que usuarios externos puedan acceder a los datos?";"p17_";"api_dat";"p17_api_dat";"Disponibilización"
+"18";"18- ¿Conoce la normativa para la protección de datos personales?";"p18_";"norm_prot_dat";"p18_norm_prot_dat";"Protección de datos"
+"19";"19- ¿Está definido por cuánto tiempo se deben guardar los datos el sistema? ";"p19_";"tiemp_dat";"p19_tiemp_dat";"Protección de datos"
+"20";"20- ¿Tienen clasificados los datos sensibles?";"p20_";"clasif_dat_sens";"p20_clasif_dat_sens";"Protección de datos"
+"21";"21- ¿Los datos sensibles son recogidos con consentimiento?";"p21_";"dat_sens_consent";"p21_dat_sens_consent";"Protección de datos"
+"22";"22- ¿Existe un mecanismo de minimización o destrucción periódica de los datos? ";"p22_";"destr_minim_dat";"p22_destr_minim_dat";"Protección de datos"
+"23";"23- ¿Se generan espacios de dialogos /comites para hablar sobre diferentes temas o evacuar dudas sobre politicas de datos?";"p23_";"espac_disc_prot_dat";"p23_espac_disc_prot_dat";"Protección de datos"
+"24";"24- ¿Tienen lineamientos de protección de datos definidos?";"p24_";"lineam_pro_dat";"p24_lineam_pro_dat";"Protección de datos"
+"25";"25- ¿Tienen relevados roles respecto a los datos?";"p25_";"roles_dat";"p25_roles_dat";"Gobernanza de datos"
+"26";"26- ¿Existen políticas sobre quién puede utilizar los datos, cómo pueden usarlos, qué partes pueden usar y con qué propósitos?";"p26_";"polit_uso_dat";"p26_polit_uso_dat";"Gobernanza de datos"
+"27";"27- ¿Tienen documentadas las etapas del ciclo de vida de los datos?";"p27_";"documen_cic_v_dat";"p27_documen_cic_v_dat";"Gobernanza de datos"
+"28";"28- ¿Realizan capacitaciones para el personal en gobernanza de datos (clasificación, roles)?";"p28_";"capac_pers_gobern_dat";"p28_capac_pers_gobern_dat";"Gobernanza de datos"
+"29";"29- ¿Tiene reportes de acceso a los datos?
+Si responden opción 2 o 99 pasa a preguntas de la siguiente dimensión (Calidad de los datos)";"p29_";"report_acc_dat";"p29_report_acc_dat";"Gestión de acceso a datos"
+"30";"30- ¿Tienen implementado algún sistema de acceso a la información?";"p30_";"sist_acc_info";"p30_sist_acc_info";"Gestión de acceso a datos"
+"31";"31- ¿Realizan controles de revisión de la calidad de los datos con cierta periodicidad?";"p31_";"revis_cal_dat";"p31_revis_cal_dat";"Calidad de los datos"
+"32";"32- ¿Qué métricas de calidad analizan esos controles?
+Pregunta de respuesta múltiple.";"p32_";"metr_cal_dat";"p32_metr_cal_dat";"Calidad de los datos"
+"33";"33- ¿Tienen procesos y procedimientos documentados que analicen el grado de cumplimiento de las métricas de calidad definidas?";"p33_";"proc_cal_dat";"p33_proc_cal_dat";"Calidad de los datos"
+"34";"34- ¿Tienen perfiles profesionales/técnicos dedicados a evaluar con una periodicidad conocida métricas de calidad?";"p34_";"per_espec_cal_dat";"p34_per_espec_cal_dat";"Calidad de los datos"
+"35";"35- ¿Se intercambian datos? ";"p35_";"interc_dat";"p35_interc_dat";"Reutilización de datos"
+"36";"36- ¿Tienen definidos mecanismos para que las personas de la orgnización compartan los datos con un propósito determinado?";"p36_";"mecan_prop_comp_dat";"p36_mecan_prop_comp_dat";"Reutilización de datos"
+"37";"37- ¿Tienen perfiles profesionales/técnicos especializados en el tema?";"p37_";"pers_espec_reut_dat";"p37_pers_espec_reut_dat";"Reutilización de datos"
+"38";"38- ¿Tienen definido un modelo de datos?
+Si responden opción 2 o 99 finalizó el relevamiento";"p38_";"model_dat";"p38_model_dat";"Modelo de datos"
+"39";"39- ¿Qué tan bien documentados están los datos? ";"p39_";"grad_documen_dat";"p39_grad_documen_dat";"Modelo de datos"
+"40";"40- ¿Tienen documentación del modelo de datos que defina...
+Pregunta de respuesta múltiple.";"p40_";"documen_mod_dat";"p40_documen_mod_dat";"Modelo de datos"
+"41";"41- ¿Tienen personas trabajando que se especialicen en el tema?";"p41_";"pers_espec_model_dat";"p41_pers_espec_model_dat";"Modelo de datos"

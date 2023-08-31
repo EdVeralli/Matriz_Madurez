@@ -1,0 +1,59 @@
+Timestamp,Score,"Información de quién responde
+
+¿Cuál es el nombre del área de gobierno a la que pertenece (Coordinación, Dirección, etc)?  ",¿De que secretaría o subsecretaría depende?,"Fuente de información/Integración
+
+1- ¿Recopilan datos?","2- ¿Tiene Base de datos propias?
+
+Base de datos: sistema organizado para almacenar y recuperar información. Puede ser utilizado para guardar una variedad de datos, como números, texto, imágenes y más. Las bases de datos son comúnmente utilizadas en aplicaciones gubernamentales, sitios web y aplicaciones móviles para almacenar y recuperar información de manera eficiente.    ",3- ¿Quién controla el y gestiona la base de datos?   ,"4- ¿Integran los datos de las distintas fuentes que disponen? 
+
+Integración de datos: es el proceso de combinar datos de diferentes fuentes para crear una única vista de los datos. Esto puede incluir la combinación de datos de diferentes bases de datos, sistemas y formatos, y puede requerir la limpieza y transformación de los datos antes de su combinación. ","5- ¿Utilizan alguna tecnología para integrar  los datos, de diferentes fuentes y sistemas?
+(APIs, Middleware, Data Warehouse)",6- ¿Tienen documentadas las políticas de integración de datos?,"Ciencias de datos
+
+7- ¿Tiene un área destinada a Ciencia de datos?
+
+Ciencia de datos: Es un campo interdisciplinario que utiliza métodos, procesos, algoritmos y sistemas para extraer conocimiento y entendimiento útil de datos, tanto estructurados como no estructurados.    
+
+Si responde opción ""No"", ""No sabe"" o ""No aplica"" pasa a pregunta 12.  ",8- ¿Aplican técnicas estadísticas y modelos matemáticos para analizar los datos?,9- ¿Utilizan herramientas de visualización para crear gráficos y tablas que permitan mostrar el  resultado del análisis de los datos? ,10.- ¿Se desarrollan y entrenan modelos de aprendizaje automático y análisis predictivo para predecir patrones y eventos futuros? ,11.- ¿Tienen documentados los proyectos de ciencia de datos?,"Actualidad de Reportes/Productos
+
+12.- ¿Tienen reportes?
+
+Los reportes de datos son presentaciones estructuradas y resumidas de información relevante que se han recopilado y analizado. Pueden presentarse de diversas formas, incluyendo tablas, gráficos, informes escritos y presentaciones visuales, y su publicación puede ser tanto en formato digital (PDF, Google doc, etc.) o a través de una web.  
+
+Si responde opción ""No"", ""No sabe"" o ""No aplica"" pasa a pregunta 15.",13- ¿Con qué frecuencia actualizan los reportes?,14.- ¿Cuál es la forma de actualización de los reportes?,"Disponibilización
+
+15.-¿ Los datos están disponibles para las áreas que los requieran?
+
+Si responde opción ""No están disponibles"" o ""No sabe"" pasa a pregunta 18.","16.- ¿Los datos se pueden leer usando alguno de los formatos estándares abiertos? 
+
+Los formatos más comunes y estándar para la lectura de datos abiertos son JSON, CSV, XML y RDF. Sin embargo, depende de cada caso de uso para decidir qué formato es el mejor para su necesidad.    ","17.- ¿Tienen APIs desarrolladas para que usuarios externos puedan acceder a los datos?
+
+API (Interfaz de Programación de Aplicaciones): Es un conjunto de reglas y especificaciones que permite a dos sistemas interactuar entre sí. Una API permite que una aplicación acceda a los datos o funcionalidades de otro sistema, sin tener que conocer todos los detalles de su implementación. Las APIs se utilizan comúnmente para permitir que diferentes sistemas se integren entre sí, o para permitir que terceros desarrollen aplicaciones que interactúen con un sistema existente.  
+","Protección de datos
+
+18.- ¿Conoce la normativa de protección de Datos Personales?",19. ¿Está definido por cuánto tiempo se deben guardar los datos personales en el sistema?,"20. ¿Tienen clasificados los datos sensibles?
+
+La clasificación de los datos: se refiere a la división de los datos en dos categorías en función de su nivel de confidencialidad y privacidad. Los datos sensibles son aquellos que, sí son revelados o utilizados de manera indebida, podrían causar daño a un individuo o a una organización. Por ejemplo, información del estado de salud de las personas son considerados datos sensibles. Por otro lado, los datos no sensibles son aquellos que no tienen un alto nivel de confidencialidad y privacidad y su revelación o uso indebido no tendría consecuencias graves.   ",21- ¿Los datos sensibles son recogidos con consentimiento?,"22- ¿Existe un mecanismo de minimización o destrucción periódica de los datos?
+
+Destrucción de datos: Proceso mediante el cual se eliminan de forma permanente los datos almacenados en un sistema de información, con el objetivo de garantizar la privacidad y seguridad de la información. Esto puede incluir la eliminación física de dispositivos de almacenamiento, la sobre escritura de los datos en el mismo dispositivo o la eliminación lógica de los datos a través de software especializado.  ",23- ¿Se generan espacios de diálogos /comités para hablar sobre diferentes temas o evacuar dudas sobre políticas de datos?,24- ¿Tienen lineamientos de protección de datos definidos?,"Gobernanza de datos
+
+25- ¿Tienen relevados roles respecto a los datos? ","26- ¿Existen políticas sobre quién puede utilizar los datos, cómo pueden usarlos, qué partes pueden usar y con qué propósitos?",27- ¿Tienen documentadas las etapas del ciclo de vida de los datos?,"28- ¿Realizan capacitaciones para el personal en gobernanza de datos (clasificación, roles)?","Gestión de acceso a datos  
+
+29.- ¿Tienen reportes de acceso a los datos?
+
+Si responde opción ""No o ""No sabe"" pasa a pregunta 31.",30.-¿Tienen implementado algún sistema de acceso a la información?,"Calidad de los datos 
+31-   ¿Realizan controles de revisión de la calidad de los datos con cierta periodicidad?   
+Calidad de los datos: Refieren a la medida en que los datos cumplen con los estándares de precisión, completitud, consistencia, integridad y validez. La calidad de los datos es esencial para garantizar que las decisiones basadas en esos datos sean precisas y confiables.  ","32-  ¿Qué métricas de calidad analizan esos controles?  
+Pregunta de respuesta múltiple.
+Exactitud: grado en que los datos representan con precisión la realidad.
+Integridad/completitud: grado en que los datos relevantes y necesarios están disponibles para su uso.
+Consistencia: grado en el que los datos están libres de contradicción y son coherentes con otros datos en un contexto específico; indica si los valores de los datos que están almacenados en diferentes lugares son coincidentes.
+Vigencia/Actualidad: grado en el que los datos tienen atributos aceptablemente actualizados en un contexto de uso específico.
+Credibilidad: Describe el grado en que los datos tienen atributos que los usuarios consideran verdaderos y creíbles. Los datos se consideran creíbles si se basan en fuentes fiables
+Valor agregado: El uso coherente de identificadores únicos también permite la vinculación y la  adición con datos externos. Esto añade valor a los datos existentes mediante vinculación con nuevos conceptos o aspectos de los datos existentes.",33- ¿Tienen procesos y procedimientos documentados que analicen el grado de cumplimiento de las métricas de calidad definidas?  ,34- ¿Tienen perfiles profesionales/técnicos dedicados a evaluar con una periodicidad conocida métricas de calidad?,"Reutilización de datos
+35- ¿Se intercambian datos...? 
+",36- ¿Tienen definidos mecanismos para que las personas de la organización compartan los datos con un propósito determinado?,37- ¿Tienen perfiles profesionales/técnicos especializados en el tema?,"Modelo de datos  
+38- ¿Tienen definido un modelo de datos? 
+Modelo de datos: Es una representación abstracta de la estructura lógica y semántica de un conjunto de datos, que permite describir cómo se relacionan entre sí los datos y cómo se utilizan en un sistema o aplicación específica. ",39 ¿Qué tan bien documentados están los datos? ,"40 ¿Tienen documentación del modelo de datos que defina...
+
+Pregunta de respuesta múltiple.  ",41- ¿Tienen personas trabajando que se especialicen en el tema?,Sugerencias 
+5/9/2023 18:01:51,,fundar,datos,Si,No,No aplica porque no está dentro de las tareas hacer controles en la base de dato,Si,No,No,Si,Si,Si,Si,Si,No,,,Están disponibles para áreas internas,Algunos de los datos se pueden leer en alguno/s de los formatos antes mencionados.,No,Conozco la de CABA y la de Nación,No,No,No aplica porque no está dentro de las tareas del área definir políticas de protección de datos ni recolectar datos sensibles,No,Si,No,No,No,No,Si,No,,Algunas veces al mes.,"Consistencia, Actualidad, Pertenencia",No,Si,Con áreas internas de la organización,No,No,No,"Existe un diccionario de datos, que incluye metadatos y las condiciones en las que se capturaron los datos.","Cómo serán almacenados, No tienen documentación",Si,
