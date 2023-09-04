@@ -19,7 +19,7 @@ import pandas as pd
 
 import os
 import sys
-os.chdir("/home/eduardo/GCBA/Encuesta/")
+os.chdir("/home/eduardo/GCBA/Encuesta/Matriz_Madurez/data/")
 
 
 #canvas.showPage()

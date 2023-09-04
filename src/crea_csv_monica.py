@@ -7,7 +7,50 @@ import pandas as pd
 
 import os
 import sys
-os.chdir("/home/eduardo/GCBA/Encuesta/")
+os.chdir("/home/eduardo/GCBA/Encuesta/Matriz_Madurez/data/")
+
+import json
+ 
+# # Opening JSON file
+# f = open('submission-6.json')
+ 
+# # returns JSON object as
+# # a dictionary
+# data = json.load(f)
+ 
+# # Iterating through the json
+# # list
+# for i in data['serial']:
+#     print(i)
+
+# print("*********************")
+# #print(data['data'])
+
+# respuestas = data['data']
+
+# # Closing file
+# f.close()
+
+# sys.exit()
+
+p = open("Scores_monica.csv", "w")
+Score_Final_titulo = "id"+";"+'Area'+";"+"Organismo"+ \
+        ";"+"Fuente de información/Integración"+";"+"nivel d1"+";"+"texto d1"+ \
+        ";"+'Ciencia de datos'+";"+"nivel d2"+";"+"texto d2"+ \
+        ';'+'Actualidad de Reportes/productos'+";"+"nivel d3"+";"+"texto d3"+ \
+        ';'+'Disponibilización'+";"+"nivel d4"+";"+"texto d4"+ \
+        ';'+'Protección de datos'+";"+"nivel d5"+";"+"texto d5"+ \
+        ";"+'Gobernanza de datos'+";"+"nivel d6"+";"+"texto d6"+ \
+        ';'+'Gestión de acceso a datos'+";"+"nivel d7"+";"+"texto d7"+ \
+        ';'+'Calidad de los datos'+";"+"nivel d8"+";"+"texto d8"+ \
+        ';'+'Reutilización de datos'+";"+"nivel d9"+";"+"texto d9"+ \
+        ';'+'Modelo de datos' +";"+"nivel d10"+";"+"texto d10"+  \
+        ';'+'Final' +";"+"nivel final"+";"+"texto final"         
+        
+        
+        
+p.write(Score_Final_titulo+"\n")
+
 
 
 scores = pd.read_csv('Score_Final.csv',sep=';', encoding='utf-8')
@@ -330,14 +373,29 @@ for i in range(len(scores)):
          nivel_final = "Nivel Mejora continua"
          texto_final = "Indica que la organización implementa constantemente mecanismos para la buena gestion de los datos, busca aprender de las experiencias, auditar y revisar los procesos y compartir las mejores prácticas. Estas acciones demuestran un enfoque constante en la mejora y la optimización de las prácticas de tratamiento de datos, lo que permite a la organización seguir evolucionando y alcanzar niveles más altos de madurez en el futuro."
          
-p = open("textos_monica.csv", "w")
-titulo = 'Nivel 1'+";"+"Texto Nivel 1"+";"+'Nivel 2'+";"+"Texto Nivel 2"+";"+'Nivel 3'+";"+"Texto Nivel 3"+";"+'Nivel 4'+";"+"Texto Nivel 4"+";"+'Nivel 5'+";"+"Texto Nivel 5"+";"+'Nivel 6'+";"+"Texto Nivel 6"+";"+'Nivel 7'+";"+"Texto Nivel 7"+";"+'Nivel 8'+";"+"Texto Nivel 8"+";"+'Nivel 9'+";"+"Texto Nivel 9"+";"+'Nivel 10'+";"+"Texto Nivel 10"+"\n"
-p.write(titulo)
-p.write(nivel_dim1+";"+texto_dim1+";"+nivel_dim2+";"+texto_dim2+";"+nivel_dim3+";"+texto_dim3+";"+nivel_dim4+";"+texto_dim4+";"+nivel_dim5+";"+texto_dim5+";"+nivel_dim6+";"+texto_dim6+";"+nivel_dim7+";"+texto_dim7+";"+nivel_dim8+";"+texto_dim8+";"+nivel_dim9+";"+texto_dim9+";"+nivel_dim10+";"+texto_dim10+";"+"\n")
-p.write(";"+"\n")
-p.write(";"+"\n")
-p.write(";"+"\n")
-p.write("Valores Finales ;"+"\n")
 
-p.write(nivel_final+";"+texto_final+"\n")
+     p.write(str(i+1)+";"+Area+";"+Organismo+
+            ";"+str(Fuente_de_informacion_Integracion_int)+";"+nivel_dim1+";"+texto_dim1+  \
+            ";"+str(Ciencia_de_datos_int)+";"+nivel_dim2+";"+texto_dim2+ \
+            ";"+str(Actualidad_de_Reportes_productos_int)+";"+nivel_dim3+";"+texto_dim3+ \
+            ";"+str(Disponibilizacion_int)+";"+nivel_dim4+";"+texto_dim4+ \
+            ";"+str(Proteccion_de_datos_int)+";"+nivel_dim5+";"+texto_dim5+ \
+            ";"+str(Gobernanza_de_datos_int)+";"+nivel_dim6+";"+texto_dim6+ \
+            ";"+str(Gestion_de_acceso_a_datos_int)+";"+nivel_dim7+";"+texto_dim7+ \
+            ";"+str(Calidad_de_los_datos_int)+";"+nivel_dim8+";"+texto_dim8+ \
+            ";"+str(Reutilizacion_de_datos_int)+";"+nivel_dim9+";"+texto_dim9+ \
+            ";"+str(Modelo_de_datos_int)+";"+nivel_dim10+";"+texto_dim10+ \
+            ";"+str(Promedio)+";"+nivel_final+";"+texto_final+"\n")       
+
+
+# #p = open("textos_monica.csv", "w")
+# titulo = 'Nivel 1'+";"+"Texto Nivel 1"+";"+'Nivel 2'+";"+"Texto Nivel 2"+";"+'Nivel 3'+";"+"Texto Nivel 3"+";"+'Nivel 4'+";"+"Texto Nivel 4"+";"+'Nivel 5'+";"+"Texto Nivel 5"+";"+'Nivel 6'+";"+"Texto Nivel 6"+";"+'Nivel 7'+";"+"Texto Nivel 7"+";"+'Nivel 8'+";"+"Texto Nivel 8"+";"+'Nivel 9'+";"+"Texto Nivel 9"+";"+'Nivel 10'+";"+"Texto Nivel 10"+"\n"
+# p.write(titulo)
+# p.write(nivel_dim1+";"+texto_dim1+";"+nivel_dim2+";"+texto_dim2+";"+nivel_dim3+";"+texto_dim3+";"+nivel_dim4+";"+texto_dim4+";"+nivel_dim5+";"+texto_dim5+";"+nivel_dim6+";"+texto_dim6+";"+nivel_dim7+";"+texto_dim7+";"+nivel_dim8+";"+texto_dim8+";"+nivel_dim9+";"+texto_dim9+";"+nivel_dim10+";"+texto_dim10+";"+"\n")
+# p.write(";"+"\n")
+# p.write(";"+"\n")
+# p.write(";"+"\n")
+# p.write("Valores Finales ;"+"\n")
+
+# p.write(nivel_final+";"+texto_final+"\n")
 p.close()
