@@ -351,27 +351,27 @@ for i in range(len(scores)):
 
      if Promedio == 0:
          nivel_final = "Nivel cero"
-         texto_final = " "
+         texto_final = "Indica que la organización, no contempla lo suficiente el valor de los datos  en la toma de decisiones no es suficientemente apreciado y promovido en la organización. Estar en este nivel implica que la organización debe comenzar a tomar en cuenta la buena gestión de los datos para avanzar hacia los siguientes niveles de madurez. "
 
      if Promedio > 0 and Promedio< 1:
          nivel_final = "Nivel Inicial"
-         texto_final = " "
+         texto_final = "Indica que la organización reconoce que los datos son un activo invaluable para la toma de decisiones. Para seguir creciendo en la madurez de los datos de la organización podría centrarse en aspectos como la calidad de los datos, la gestión de datos, el análisis de datos, la cultura de datos e innovación y mejora continua en la gestión de datos. "
 
      if Promedio >= 1 and Promedio< 2:
          nivel_final = "Nivel Medio"
-         texto_final = " "
+         texto_final = "Indica que la  organización ha logrado una comprensión adecuada de la importancia de los datos como un activo fundamental. Es importante desarrolladar una conciencia sólida de los datos como un activo clave. Para seguir creciendo en la madurez de los datos en  la organización podría enfocarse en la gestión de datos, gobernanza de datos, calidad e integridad de los datos, el análisis de datos avanzado, impulsar una cultura de datos, un enfoque continuo en la mejorar las prácticas de gestión de datos y un impacto significativo en la toma de decisiones."
          
      if Promedio >= 2 and Promedio< 3:
          nivel_final = "Nivel avanzado"
-         texto_final = " "  
+         texto_final = "Indica que la organización  ha logrado un reconocimiento pleno de la importancia de los datos para el éxito en la toma de decisiones basadas en datos. Para avanzar a un nivel experto recomendamos centrarse en la innovación en el uso de datos, la integración de datos, contar con lineamientos, procesos documentados para la gestión de riesgos y seguridad de datos. El enfoque en la mejora continua y aprendizaje."  
          
      if Promedio >= 3 and Promedio< 4:
          nivel_final = "Nivel Experto"
-         texto_final = " "
+         texto_final = "Indica que la organización comprende plenamente la importancia de contar con una excelente infraestructura de datos en todos los niveles, que sus equipos están conformados por expertos en la materia y buscan tener  datos de calidad y reconocen que esto le proporciona una ventaja competitiva en la toma de decisiones.Para no descuidar el nivel logrado de madurez la organización debe enfocarse en la gobernanza de datos, la automatización y escalabilidad, la cultura de datos centrada en el valor, la innovación continua y la colaboración con los actores que sean necesarios, formar equipos interdisciplinarios para seguir mejorando sus prácticas de gestión de datos."
          
      if Promedio >= 4 and Promedio< 6:
          nivel_final = "Nivel Mejora continua"
-         texto_final = " "
+         texto_final = "Indica que la organización implementa constantemente mecanismos para la buena gestion de los datos, busca  aprender de las experiencias, auditar y revisar los procesos y compartir las mejores prácticas. Estas acciones demuestran un enfoque constante en la mejora y la optimización de las prácticas de tratamiento de datos, lo que permite a la organización seguir evolucionando y alcanzar niveles más altos de madurez en el futuro"
          
 
      p.write(str(i+1)+";"+Area+";"+Organismo+
