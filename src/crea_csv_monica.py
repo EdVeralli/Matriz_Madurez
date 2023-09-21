@@ -162,7 +162,7 @@ for i in range(len(scores)):
         
      if Actualidad_de_Reportes_productos_int >= 3 and Actualidad_de_Reportes_productos_int<4:
         nivel_dim3 = "Experto"
-        texto_dim3 = "La organización demuestra un alto grado de madurez en el tratamiento de los datos para generar reportes y productos actualizados; habilidades sólidas y conocimientos en la generación de reportes y productos basados en datos mediante procesos eficientes. Para continuar avanzando recomendamos que continúen evaluando y mejorando periódicamente sus procesos, aprovechando las últimas tendencias y tecnologías en la generación de reportes y productos basados en datos."
+        texto_dim3 = "La organización demuestra un alto grado de madurez en el tratamiento de los datos para generar reportes y productos actualizados habilidades sólidas y conocimientos en la generación de reportes y productos basados en datos mediante procesos eficientes. Para continuar avanzando recomendamos que continúen evaluando y mejorando periódicamente sus procesos, aprovechando las últimas tendencias y tecnologías en la generación de reportes y productos basados en datos."
         
      if Actualidad_de_Reportes_productos_int >= 4 and Actualidad_de_Reportes_productos_int<=6:
         nivel_dim3 = "Mejora continua"
@@ -180,7 +180,7 @@ for i in range(len(scores)):
         
      if Disponibilizacion_int >= 1 and Disponibilizacion_int<2:
         nivel_dim4 = "Medio"
-        texto_dim4 = "La organización debe procurar  disponibilizar los datos  en formatos estándar abiertos como CSV, JSON, XML, KML, GEOJSON; desarrollar APIs para permitir el acceso externo; y utilizar un lenguaje adecuado según la audiencia (demográfica, tributaria, etc.). La disponibilidad de los datos es fundamental para la toma de decisiones informadas y realizar analisis, aunque también deben estar protegidos mediante políticas de seguridad de la información."
+        texto_dim4 = "La organización debe procurar  disponibilizar los datos  en formatos estándar abiertos como CSV, JSON, XML, KML, GEOJSON desarrollar APIs para permitir el acceso externo y utilizar un lenguaje adecuado según la audiencia (demográfica, tributaria, etc.). La disponibilidad de los datos es fundamental para la toma de decisiones informadas y realizar analisis, aunque también deben estar protegidos mediante políticas de seguridad de la información."
         
      if Disponibilizacion_int >= 2 and Disponibilizacion_int<3:
         nivel_dim4 = "Avanzado"
@@ -192,7 +192,7 @@ for i in range(len(scores)):
         
      if Disponibilizacion_int >= 4 and Disponibilizacion_int<=6:
         nivel_dim4 = "Mejora continua"
-        texto_dim4 = "La organización al tener los datos disponibles de forma permanente y en formatos abiertos mejora el acceso para usuarios externos y fomenta su reutilización; y es una excelente práctica para la disponibilidad y transparencia de los datos. "
+        texto_dim4 = "La organización al tener los datos disponibles de forma permanente y en formatos abiertos mejora el acceso para usuarios externos y fomenta su reutilización y es una excelente práctica para la disponibilidad y transparencia de los datos. "
         
 ######
 
@@ -240,7 +240,7 @@ for i in range(len(scores)):
         
      if Gobernanza_de_datos_int >= 3 and Gobernanza_de_datos_int<4:
         nivel_dim6 = "Experto"
-        texto_dim6 = "La organización cuenta con las herramientas para la buena gestión y tratamiento de los datos y es recomendable para seguir en este camino documentar las etapas del ciclo de vida de los datos; contar con lineamientos, ya que proporcionan coherencia, estandarización, reducen el riesgo y la incertidumbre, promueven la transparencia y la responsabilidad, aumentan la eficiencia, la productividad, y su gestión segura. Las capacitaciones en gobernanza de datos, en especial sobre clasificación y roles, son fundamentales para garantizar la privacidad y seguridad de los datos, proteger los derechos de las personas y cumplir con las regulaciones, mejorando la eficiencia del personal."
+        texto_dim6 = "La organización cuenta con las herramientas para la buena gestión y tratamiento de los datos y es recomendable para seguir en este camino documentar las etapas del ciclo de vida de los datos contar con lineamientos, ya que proporcionan coherencia, estandarización, reducen el riesgo y la incertidumbre, promueven la transparencia y la responsabilidad, aumentan la eficiencia, la productividad, y su gestión segura. Las capacitaciones en gobernanza de datos, en especial sobre clasificación y roles, son fundamentales para garantizar la privacidad y seguridad de los datos, proteger los derechos de las personas y cumplir con las regulaciones, mejorando la eficiencia del personal."
         
      if Gobernanza_de_datos_int >= 4 and Gobernanza_de_datos_int<=6:
         nivel_dim6 = "Mejora continua"
@@ -270,7 +270,7 @@ for i in range(len(scores)):
         
      if Gestion_de_acceso_a_datos_int >= 4 and Gestion_de_acceso_a_datos_int<=6:
         nivel_dim7 = "Mejora continua"
-        texto_dim7 = "La organización demuestra una madurez y excelencia en el tratamiento y acceso seguro a los datos, mediante la implementación de prácticas sólidas, con políticas y controles eficientes para proteger y garantizar el acceso a los datos. Es importante mantener esta forma de trabajo, evaluando y actualizando políticas y controles, con las últimas tendencias y tecnologías en seguridad de datos; promoviendo la capacitación y lineamientos sobre la protección de datos. Asimismo, recomendamos que en sus experiencias con otras áreas, fomenten una cultura de seguridad y colaboración en la gestión del acceso a los datos. "
+        texto_dim7 = "La organización demuestra una madurez y excelencia en el tratamiento y acceso seguro a los datos, mediante la implementación de prácticas sólidas, con políticas y controles eficientes para proteger y garantizar el acceso a los datos. Es importante mantener esta forma de trabajo, evaluando y actualizando políticas y controles, con las últimas tendencias y tecnologías en seguridad de datos promoviendo la capacitación y lineamientos sobre la protección de datos. Asimismo, recomendamos que en sus experiencias con otras áreas, fomenten una cultura de seguridad y colaboración en la gestión del acceso a los datos. "
 
 ######
 
