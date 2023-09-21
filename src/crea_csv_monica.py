@@ -34,7 +34,7 @@ import json
 # sys.exit()
 
 p = open("Scores_monica.csv", "w")
-Score_Final_titulo = "id"+";"+'Area'+";"+"Organismo"+ \
+Score_Final_titulo = "id"+";"+"Fecha"+";"+"NombreApellido"+";"+"mail"+";"+'cargo'+";"+"Organismo"+ \
         ";"+"Fuente de información/Integración"+";"+"nivel d1"+";"+"texto d1"+ \
         ";"+'Ciencia de datos'+";"+"nivel d2"+";"+"texto d2"+ \
         ';'+'Actualidad de Reportes/productos'+";"+"nivel d3"+";"+"texto d3"+ \
@@ -53,14 +53,15 @@ p.write(Score_Final_titulo+"\n")
 
 
 
-scores = pd.read_csv('Score_Final.csv',sep=';', encoding='utf-8')
+scores = pd.read_csv('Score_Final.csv',index_col=False, encoding='utf-8',sep=';')
 
 for i in range(len(scores)):
-     Area                              = str(scores.iloc[i]['Area'])
-     Organismo                         = str(scores.iloc[i]['Organismo'])
+     Fecha                             = str(scores.iloc[i]['Fecha'])
+     NombreApellido                    = str(scores.iloc[i]['NombreApellido'])
+     mail                              = str(scores.iloc[i]['mail'])
+     cargo                             = str(scores.iloc[i]['Area'])   
+     Organismo                         = str(scores.iloc[i]['Organismo'])     
      
-     print("proceso",Area)
-
 
      Fuente_de_informacion_Integracion  = str(scores.iloc[i]['Fuente de información/Integración'])
      Ciencia_de_datos                   = str(scores.iloc[i]['Ciencia de datos'])
@@ -108,7 +109,7 @@ for i in range(len(scores)):
         nivel_dim1 = "Experto"
         texto_dim1 = "La organización ha demostrado su progreso en el tratamiento de datos demuestra un enfoque destacado en la toma de decisiones. Asimismo, puede seguir progresando mediante la evaluación constante, la adopción de tecnologías y la capacitación continua para cerrar la brecha hacia la máxima madurez en la gestión de datos."
 
-     if Fuente_de_informacion_Integracion_int >= 4 and Fuente_de_informacion_Integracion_int<=5:
+     if Fuente_de_informacion_Integracion_int >= 4 and Fuente_de_informacion_Integracion_int<=6:
         nivel_dim1 = "Mejora continua"
         texto_dim1 = "La organización al estar en este nivel refleja el compromiso con el tratamiento adecuado de los datos como un activo de valor. Es fundamental a seguir trabajando en este camino para el logro de niveles aún más avanzados de madurez en la gestión de datos."
 
@@ -136,7 +137,7 @@ for i in range(len(scores)):
         nivel_dim2 = "Experto"
         texto_dim2 = "La organización demostro madurez y prácticas avanzadas en el tratamiento de datos. Recomendamos que continúen invirtiendo en capacitación, colaboración externa y seguimiento de avances para maximizar el valor de los datos para la toma de decisiones más eficientes para la organización."
         
-     if Ciencia_de_datos_int >= 4 and Ciencia_de_datos_int<=5:
+     if Ciencia_de_datos_int >= 4 and Ciencia_de_datos_int<=6:
         nivel_dim2 = "Mejora continua"
         texto_dim2 = "La organización demostró dedicación y prácticas avanzadas en el tratamiento de los datos un grado avanzado de madurez. Instamos a que continúen actualizándose y explorando nuevas aplicaciones para continuar la innovación basada en datos."
         
@@ -163,7 +164,7 @@ for i in range(len(scores)):
         nivel_dim3 = "Experto"
         texto_dim3 = "La organización demuestra un alto grado de madurez en el tratamiento de los datos para generar reportes y productos actualizados; habilidades sólidas y conocimientos en la generación de reportes y productos basados en datos mediante procesos eficientes. Para continuar avanzando recomendamos que continúen evaluando y mejorando periódicamente sus procesos, aprovechando las últimas tendencias y tecnologías en la generación de reportes y productos basados en datos."
         
-     if Actualidad_de_Reportes_productos_int >= 4 and Actualidad_de_Reportes_productos_int<=5:
+     if Actualidad_de_Reportes_productos_int >= 4 and Actualidad_de_Reportes_productos_int<=6:
         nivel_dim3 = "Mejora continua"
         texto_dim3 = "La organización demuestra una madurez en el tratamiento de datos, generación de reportes relevantes y establecimiento de procesos sólidos reflejan un enfoque destacado en la toma de decisiones. Los aldentamos a que continúen en este camino optimizando y compartiendo prácticas eficientes para impulsar la cultura de mejora continua."
         
@@ -189,7 +190,7 @@ for i in range(len(scores)):
         nivel_dim4 = "Experto"
         texto_dim4 = "La organización demostró un gran compromiso y avance la disponibilización de los datos.Pero es importante utilizar formatos estándar abiertos (CSV, JSON, XML, KML, GEOJSON) y desarrollar APIs para el acceso externo. Difundir y utilizar el lenguaje adecuado para diferentes audiencias (demográfica, tributaria, etc.) es esencial. Los datos deben estar disponibles para la toma decisiones informadas y análisis pero también deben estar protegidos con políticas y procedimientos de seguridad de la información."
         
-     if Disponibilizacion_int >= 4 and Disponibilizacion_int<=5:
+     if Disponibilizacion_int >= 4 and Disponibilizacion_int<=6:
         nivel_dim4 = "Mejora continua"
         texto_dim4 = "La organización al tener los datos disponibles de forma permanente y en formatos abiertos mejora el acceso para usuarios externos y fomenta su reutilización; y es una excelente práctica para la disponibilidad y transparencia de los datos. "
         
@@ -215,7 +216,7 @@ for i in range(len(scores)):
         nivel_dim5 = "Experto"
         texto_dim5 = "La organización conoce y cumple con las obligaciones legales, permanencia de datos en los sistemas, clasificación y consentimiento. Se destaca la importancia de contar con lineamientos de protección de datos definidos, comunicados y actualizados periódicamente. Esto fortalecerá la protección de datos, promoverá la cultura de cumplimiento y seguridad en toda la organización."
         
-     if Proteccion_de_datos_int >= 4 and Proteccion_de_datos_int<=5:
+     if Proteccion_de_datos_int >= 4 and Proteccion_de_datos_int<=6:
         nivel_dim5 = "Mejora continua"
         texto_dim5 = "La organización ha implementado prácticas sólidas de protección de datos y cuenta con lineamientos definidos. Esto garantiza un tratamiento coherente de los datos y cumplimiento normativo, además de promover una cultura de responsabilidad. Se recomienda seguir fortaleciendo el enfoque mediante capacitación, evaluación continua y medidas adicionales según sea necesario para garantizar la protección y confianza en la privacidad de la información."
 
@@ -241,7 +242,7 @@ for i in range(len(scores)):
         nivel_dim6 = "Experto"
         texto_dim6 = "La organización cuenta con las herramientas para la buena gestión y tratamiento de los datos y es recomendable para seguir en este camino documentar las etapas del ciclo de vida de los datos; contar con lineamientos, ya que proporcionan coherencia, estandarización, reducen el riesgo y la incertidumbre, promueven la transparencia y la responsabilidad, aumentan la eficiencia, la productividad, y su gestión segura. Las capacitaciones en gobernanza de datos, en especial sobre clasificación y roles, son fundamentales para garantizar la privacidad y seguridad de los datos, proteger los derechos de las personas y cumplir con las regulaciones, mejorando la eficiencia del personal."
         
-     if Gobernanza_de_datos_int >= 4 and Gobernanza_de_datos_int<=5:
+     if Gobernanza_de_datos_int >= 4 and Gobernanza_de_datos_int<=6:
         nivel_dim6 = "Mejora continua"
         texto_dim6 = "La organización tomó medidas significativas en la gobernanza de datos. Mantener un enfoque proactivo y fortalecer aspectos clave ayudará a maximizar el valor de los datos, garantizar el cumplimiento normativo y la confianza de los stakeholders."
 
@@ -267,7 +268,7 @@ for i in range(len(scores)):
         nivel_dim7 = "Experto"
         texto_dim7 = "La organización  logro una excelencia, un alto grado de madurez en la gestión del acceso a los datos e implementacion de prácticas sólidas y avanzadas para garantizar la seguridad y el acceso adecuado a la información. En pos de alcanzar el nivel máximo los alentamos a seguir mejorando las políticas y controles de acceso, actualizándose en las mejores prácticas y tecnologías. "
         
-     if Gestion_de_acceso_a_datos_int >= 4 and Gestion_de_acceso_a_datos_int<=5:
+     if Gestion_de_acceso_a_datos_int >= 4 and Gestion_de_acceso_a_datos_int<=6:
         nivel_dim7 = "Mejora continua"
         texto_dim7 = "La organización demuestra una madurez y excelencia en el tratamiento y acceso seguro a los datos, mediante la implementación de prácticas sólidas, con políticas y controles eficientes para proteger y garantizar el acceso a los datos. Es importante mantener esta forma de trabajo, evaluando y actualizando políticas y controles, con las últimas tendencias y tecnologías en seguridad de datos; promoviendo la capacitación y lineamientos sobre la protección de datos. Asimismo, recomendamos que en sus experiencias con otras áreas, fomenten una cultura de seguridad y colaboración en la gestión del acceso a los datos. "
 
@@ -293,7 +294,7 @@ for i in range(len(scores)):
         nivel_dim8 = "Experto"
         texto_dim8 = "La organización al encontrarse en este nivel demuestra que constantemente realizan mejoras e incorporan perfiles profesionales o técnicos dedicados a evaluar periódicamente las métricas de calidad. Estos expertos aportarán conocimientos especializados, garantizarán un monitoreo constante, establecerán responsabilidad y rendición de cuentas, fortaleciendo así la toma de decisiones informadas y confiables basadas en datos de alta calidad. "
         
-     if Calidad_de_los_datos_int >= 4 and Calidad_de_los_datos_int<=5:
+     if Calidad_de_los_datos_int >= 4 and Calidad_de_los_datos_int<=6:
         nivel_dim8 = "Mejora continua"
         texto_dim8 = "La organización tiene un enfoque riguroso en la gestión de la calidad de los datos. Alentamos a que continúen trabajando en dicha mejora, para asegurar que lod datos sean precisos, relevantes y útiles para la toma de decisiones. Esto puede mejorar significativamente la capacidad de la organización para competir en el mercado y lograr sus objetivos. "
 
@@ -319,7 +320,7 @@ for i in range(len(scores)):
         nivel_dim9 = "Experto"
         texto_dim9 = "La organización tiene mecanismos definidos para que las personas de la organización compartan datos con un propósito determinado es esencial para el buen desempeño de una organización, promueve la transparencia, la colaboración, la toma de decisiones basadas en evidencia, la innovación y el desarrollo de servicios centrados en las personas, y se aprovechan al máximo los datos disponibles. Sería importante acompañar esto con profesionales y técnicos especializados en reutilización de datos que impulsen y gestionen de manera efectiva este proceso. Su conocimiento técnico, experiencia en gobernanza de datos, capacidad de análisis, habilidades de comunicación y enfoque innovador son indispensables para el valor de los datos y generar beneficios significativos tanto para la organización como para la sociedad."
         
-     if Reutilizacion_de_datos_int >= 4 and Reutilizacion_de_datos_int<=5:
+     if Reutilizacion_de_datos_int >= 4 and Reutilizacion_de_datos_int<=6:
         nivel_dim9 = "Mejora continua"
         texto_dim9 = "La organización no tan solo tienen definidos los mecanismos para compartir datos con un propósito determinado, sino que cuentan con perfiles profesionales especializados en su reutilización. Esta combinación es altamente valiosa y brinda una base sólida para aprovechar al máximo los datos y promover la innovación y la transparencia. Continuar fortaleciendo estas prácticas y fomentando una cultura de reutilización de datos permitirá aprovechar plenamente el potencial de los datos, mejorar la prestación de servicios y promover la innovación en beneficio de la sociedad. "
 
@@ -372,20 +373,19 @@ for i in range(len(scores)):
      if Promedio >= 4 and Promedio< 6:
          nivel_final = "Mejora continua"
          texto_final = "Indica que la organización implementa constantemente mecanismos para la buena gestion de los datos, busca  aprender de las experiencias, auditar y revisar los procesos y compartir las mejores prácticas. Estas acciones demuestran un enfoque constante en la mejora y la optimización de las prácticas de tratamiento de datos, lo que permite a la organización seguir evolucionando y alcanzar niveles más altos de madurez en el futuro"
-         
 
-     p.write(str(i+1)+";"+Area+";"+Organismo+
-            ";"+str(Fuente_de_informacion_Integracion_int)+";"+nivel_dim1+";"+texto_dim1+  \
-            ";"+str(Ciencia_de_datos_int)+";"+nivel_dim2+";"+texto_dim2+ \
-            ";"+str(Actualidad_de_Reportes_productos_int)+";"+nivel_dim3+";"+texto_dim3+ \
-            ";"+str(Disponibilizacion_int)+";"+nivel_dim4+";"+texto_dim4+ \
-            ";"+str(Proteccion_de_datos_int)+";"+nivel_dim5+";"+texto_dim5+ \
-            ";"+str(Gobernanza_de_datos_int)+";"+nivel_dim6+";"+texto_dim6+ \
-            ";"+str(Gestion_de_acceso_a_datos_int)+";"+nivel_dim7+";"+texto_dim7+ \
-            ";"+str(Calidad_de_los_datos_int)+";"+nivel_dim8+";"+texto_dim8+ \
-            ";"+str(Reutilizacion_de_datos_int)+";"+nivel_dim9+";"+texto_dim9+ \
-            ";"+str(Modelo_de_datos_int)+";"+nivel_dim10+";"+texto_dim10+ \
-            ";"+str(Promedio)+";"+nivel_final+";"+texto_final+"\n")       
+     p.write(str(i+1)+";"+Fecha+";"+NombreApellido+";"+mail+";"+cargo+";"+Organismo+
+            ";"+str(Fuente_de_informacion_Integracion_int).replace(".", ",")+";"+nivel_dim1+";"+texto_dim1+  \
+            ";"+str(Ciencia_de_datos_int).replace(".", ",")+";"+nivel_dim2+";"+texto_dim2+ \
+            ";"+str(Actualidad_de_Reportes_productos_int).replace(".", ",")+";"+nivel_dim3+";"+texto_dim3+ \
+            ";"+str(Disponibilizacion_int).replace(".", ",")+";"+nivel_dim4+";"+texto_dim4+ \
+            ";"+str(Proteccion_de_datos_int).replace(".", ",")+";"+nivel_dim5+";"+texto_dim5+ \
+            ";"+str(Gobernanza_de_datos_int).replace(".", ",")+";"+nivel_dim6+";"+texto_dim6+ \
+            ";"+str(Gestion_de_acceso_a_datos_int).replace(".", ",")+";"+nivel_dim7+";"+texto_dim7+ \
+            ";"+str(Calidad_de_los_datos_int).replace(".", ",")+";"+nivel_dim8+";"+texto_dim8+ \
+            ";"+str(Reutilizacion_de_datos_int).replace(".", ",")+";"+nivel_dim9+";"+texto_dim9+ \
+            ";"+str(Modelo_de_datos_int).replace(".", ",")+";"+nivel_dim10+";"+texto_dim10+ \
+            ";"+str(Promedio).replace(".", ",")+";"+nivel_final+";"+texto_final+"\n")       
 
 
 # #p = open("textos_monica.csv", "w")
