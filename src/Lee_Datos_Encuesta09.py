@@ -21,8 +21,12 @@ varnames = ['varpunkt_p1','varpunkt_p2','varpunkt_p3','varpunkt_p4','varpunkt_p5
 #df= pd.read_csv("responses_master_SSPPBE.csv", encoding='utf-8',index_col=False)
 #df= pd.read_csv("responses_master.csv", encoding='utf-8',index_col=False)
 
-df= pd.read_csv("Capacidades de datos-Matriz de Madurez 2023  (Respuestas) - Respuestas de formulario 1.csv", encoding='utf-8',index_col=False)
+#df= pd.read_csv("Capacidades de datos-Matriz de Madurez 2023  (Respuestas) - Respuestas de formulario 1.csv", encoding='utf-8',index_col=False)
 
+df= pd.read_csv("Respuestas de formulario 05_10_2023_01.csv", encoding='utf-8',index_col=False)
+
+
+#df= pd.read_csv("respuesta03.csv")
 
 df.to_csv('respuesta_final.csv', index=False, encoding='utf-8',sep=',')
 df2 = pd.read_csv("respuesta_final.csv", names=colnames,index_col=False, encoding='utf-8')

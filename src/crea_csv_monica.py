@@ -53,7 +53,7 @@ p.write(Score_Final_titulo+"\n")
 
 
 
-scores = pd.read_csv('Score_Final.csv',index_col=False, encoding='utf-8',sep=';')
+scores = pd.read_csv('Score_Final.csv',index_col=False, encoding='utf-8',sep='')
 
 for i in range(len(scores)):
      Fecha                             = str(scores.iloc[i]['Fecha'])
