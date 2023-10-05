@@ -1,2 +1,2 @@
-Fecha,NombreApellido,mail,Area,Organismo,Fuente de información/Integración,Ciencia de datos,Actualidad de Reportes/productos,Disponibilización,Protección de datos,Gobernanza de datos,Gestión de acceso a datos,Calidad de los datos,Reutilización de datos,Modelo de datos
-10/5/2023 10:44:40,Marcos Sant,msant@buenosaires.gob.ar,Asesor,SECTOP,4.1,5,3.1,3.5,2.8,1,0,2.9,0,3.7
+Fecha;NombreApellido;mail;cargo;Organismo;Fuente de información/Integración;Ciencia de datos;Actualidad de Reportes/productos;Disponibilización;Protección de datos;Gobernanza de datos;Gestión de acceso a datos;Calidad de los datos;Reutilización de datos;Modelo de datos
+2023-10-05 10:44:40.694;Marcos Sant;msant@buenosaires.gob.ar;Asesor;SECTOP;4.1;5.0;3.1000000000000005;3.5;2.8;1.0;0.0;2.9;2.0;3.7

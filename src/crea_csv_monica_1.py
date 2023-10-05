@@ -53,13 +53,15 @@ p.write(Score_Final_titulo+"\n")
 
 
 
-scores = pd.read_csv('Score_Final.csv',index_col=False, encoding='utf-8',sep=',')
+scores = pd.read_csv('Score_Final.csv',index_col=False, encoding='utf-8',sep=';')
+
+#sys.exit()
 
 for i in range(len(scores)):
      Fecha                             = str(scores.iloc[i]['Fecha'])
      NombreApellido                    = str(scores.iloc[i]['NombreApellido'])
      mail                              = str(scores.iloc[i]['mail'])
-     cargo                             = str(scores.iloc[i]['Area'])   
+     cargo                             = str(scores.iloc[i]['cargo'])   
      Organismo                         = str(scores.iloc[i]['Organismo'])     
      
 
