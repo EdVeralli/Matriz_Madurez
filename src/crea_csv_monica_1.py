@@ -348,7 +348,7 @@ for i in range(len(scores)):
         nivel_dim10 = "Experto"
         texto_dim10 = "La organizacion en este nivel demuestra un gran compromiso, ya que  contar con un modelo de datos documentado facilita el diseño de sistemas, el mantenimiento y cumplimiento de los requisitos normativos. Recomendamos destinar recursos especializados en modelo de datos para garantizar un enfoque solido y eficiente en el almacenamiento, acceso y uso de los datos. "
         
-     if Modelo_de_datos_int >= 4 and Modelo_de_datos_int<=5:
+     if Modelo_de_datos_int >= 4 and Modelo_de_datos_int<=6:
         nivel_dim10 = "Mejora continua"
         texto_dim10 = "La organizacion tienen un modelo de datos bien documentado y cuentan con personas especializadas en el tema. Continuen trabajando en el mantenimiento, la colaboracion, la promocion de buenas practicas, la capacitacion y el monitoreo, para seguir mejorando y maximizando el valor de su modelo de datos en beneficio de la organizacion. "
 

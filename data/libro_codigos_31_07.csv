@@ -21,7 +21,7 @@ p5_tec_integr_dat,3- No aplica porque no está dentro de las tareas integrar los
 p5_tec_integr_dat,99- No sabe,99,No sabe
 p6_documen_pol_int,1- Si,1,Si
 p6_documen_pol_int,2- No,2,No
-p6_documen_pol_int,3- No aplica porque no está dentro de las tareas integrar datos,-1,No aplica porque no está dentro de las tareas integrar datos
+p6_documen_pol_int,3- No aplica porque no está dentro de las tareas integrar los datos,-1,No aplica porque no está dentro de las tareas integrar los datos
 p6_documen_pol_int,99- No sabe,99,No sabe
 p7_area_cienc_dat,1- Si,1,Si
 p7_area_cienc_dat,2- No,2,No
@@ -70,7 +70,7 @@ p17_api_dat,1- Si,1,Si
 p17_api_dat,2- No,2,No
 p17_api_dat,3- No aplica porque no está dentro de las tareas del área publicar y/o abrir datos,-1,No aplica porque no está dentro de las tareas del área publicar y/o abrir datos
 p17_api_dat,99- No sabe,99,No sabe
-p18_norm_prot_dat,1- Si Conozco la de CABA y la de Nación,1,Conozco la de CABA y la de Nación
+p18_norm_prot_dat,1- Conozco la de CABA y la de Nación,1,Conozco la de CABA y la de Nación
 p18_norm_prot_dat,2- Conozco solo la de CABA,2,Conozco solo la de CABA
 p18_norm_prot_dat,3- Conozco solo la de NACIÓN,3,Conozco solo la de Nación
 p18_norm_prot_dat,4- No conozco ninguna,4,No conozco ninguna
@@ -128,7 +128,7 @@ p31_revis_cal_dat,4- No aplica porque no está dentro de las tareas hacer seguim
 p31_revis_cal_dat,99- No sabe,99,No sabe
 p32_metr_cal_dat,1- Exactitud,1,Exactitud
 p32_metr_cal_dat,2- Completitud,2,Completitud
-p32_metr_cal_dat,3- Csonsitencia,3,Consistencia
+p32_metr_cal_dat,3- Consistencia,3,Consistencia
 p32_metr_cal_dat,4- Actualidad,4,Actualidad
 p32_metr_cal_dat,5- Credibilidad,5,Credibilidad
 p32_metr_cal_dat,6- Pertinencia,6,Pertinencia

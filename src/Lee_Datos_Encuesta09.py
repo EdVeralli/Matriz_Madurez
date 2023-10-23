@@ -26,21 +26,72 @@ varnames = ['varpunkt_p1','varpunkt_p2','varpunkt_p3','varpunkt_p4','varpunkt_p5
 #df= pd.read_csv("Respuestas de formulario 05_10_2023_01.csv", encoding='utf-8',index_col=False)
 
 
-df= pd.read_csv("respuesta03.csv")
+#df= pd.read_csv("respuesta03.csv")
 
 #df= pd.read_csv("malo.csv", low_memory=False)
 
-df = pd.read_excel('Capacidades de datos-Matriz de Madurez 2023_05_10_2023.xlsx')
+#df = pd.read_excel('Capacidades de datos-Matriz de Madurez 2023_19_10_2023.xlsx')
 
-# print(df)
+df = pd.read_excel('primera_descarga_del_sitio_Web.xlsx')
 
-# sys.exit()
+
+
+
+#df = pd.read_excel('Matriz - pruebas.xlsx')
+
+
+
+
+#print(df)
+pepe = (df.columns)
+
+
+
+df = df.drop(['ID de envío'], axis=1)
+df = df.drop(['Submission URI'], axis=1)
+df = df.drop(['Completado'], axis=1)
+df = df.drop(['Modificado'], axis=1)
+df = df.drop(['Es el borrador'], axis=1)
+df = df.drop(['Página actual'], axis=1)
+df = df.drop(['Remote IP address'], axis=1)
+df = df.drop(['Submitted by: ID'], axis=1)
+df = df.drop(['Submitted by: Título'], axis=1)
+df = df.drop(['Submitted by: URL'], axis=1)
+df = df.drop(['Idioma'], axis=1)
+df = df.drop(['Submitted to: Entity type'], axis=1)
+df = df.drop(['Submitted to: Entity ID'], axis=1)
+df = df.drop(['Bloqueado'], axis=1)
+df = df.drop(['Fijo en cabeza de las listas'], axis=1)
+df = df.drop(['Notes'], axis=1)
+df = df.drop(['Submitted to: Entity title'], axis=1)
+df = df.drop(['Submitted to: Entity URL'], axis=1)
+df = df.drop(['Serial number'], axis=1)
+df = df.drop(['Nombre de la CIudad'], axis=1)
+df = df.drop(['País'], axis=1)
+df = df.drop(['Institución/empresa'], axis=1)
+df = df.drop(['¿Cuál es el nombre del área de gobierno a la que pertenece (Coordinación, Dirección, etc)?  '], axis=1)
+#df = df.drop(['País'], axis=1)
+#df = df.drop(['País'], axis=1)
+
+
+df.insert(1, "puntuacion",0)
+
+pepe = (df.columns)
+
+
+
+df = df.reindex(["Creado","puntuacion","Apellido y Nombre","¿Pertenecés a un área del Gobierno de la Ciudad de Buenos Aires?"," Mail","Cargo/puesto que ocupa","¿De que secretaría o subsecretaría depende?","1- ¿Recopilan datos?","2- ¿Tiene Base de datos propias?","3- ¿Quién controla y gestiona la base de datos?","4- ¿Integran los datos de las distintas fuentes que disponen?","5- ¿Utilizan alguna tecnología para integrar  los datos, de diferentes fuentes y sistemas? (APIs, Middleware, Data Warehouse)","6- ¿Tienen documentadas las políticas de integración de datos?","7- ¿Tiene un área destinada a Ciencia de datos?","8- ¿Aplican técnicas estadísticas y modelos matemáticos para analizar los datos?","9- ¿Utilizan herramientas de visualización para crear gráficos y tablas que permitan mostrar el  resultado del análisis de los datos?","10.- ¿Se desarrollan y entrenan modelos de aprendizaje automático y análisis predictivo para predecir patrones y eventos futuros?","11.- ¿Tienen documentados los proyectos de ciencia de datos?","12.- ¿Tienen reportes?","13- ¿Con qué frecuencia actualizan los reportes?","14.- ¿Cuál es la forma de actualización de los reportes?","15.-¿ Los datos están disponibles para las áreas que los requieran?","16.- ¿Los datos se pueden leer usando alguno de los formatos estándares abiertos?","17.- ¿Tienen APIs desarrolladas para que usuarios externos puedan acceder a los datos?","18.- ¿Conoce la normativa de protección de Datos Personales?","19. ¿Está definido por cuánto tiempo se deben guardar los datos personales en el sistema?","20. ¿Tienen clasificados los datos sensibles?","21- ¿Los datos sensibles son recogidos con consentimiento?","22- ¿Existe un mecanismo de minimización o destrucción periódica de los datos?","23- ¿Se generan espacios de diálogos /comités para hablar sobre diferentes temas o evacuar dudas sobre políticas de datos?","24- ¿Tienen lineamientos de protección de datos definidos?","25- ¿Tienen relevados roles respecto a los datos?","26- ¿Existen políticas sobre quién puede utilizar los datos, cómo pueden usarlos, qué partes pueden usar y con qué propósitos?","27- ¿Tienen documentadas las etapas del ciclo de vida de los datos?","28- ¿Realizan capacitaciones para el personal en gobernanza de datos (clasificación, roles)?","29.- ¿Tienen reportes de acceso a los datos?","30.-¿Tienen implementado algún sistema de acceso a la información?","31-   ¿Realizan controles de revisión de la calidad de los datos con cierta periodicidad?","32-  ¿Qué métricas de calidad analizan esos controles?","33- ¿Tienen procesos y procedimientos documentados que analicen el grado de cumplimiento de las métricas de calidad definidas?","34- ¿Tienen perfiles profesionales/técnicos dedicados a evaluar con una periodicidad conocida métricas de calidad?","35- ¿Se intercambian datos...?","36- ¿Tienen definidos mecanismos para que las personas de la organización compartan los datos con un propósito determinado?","37- ¿Tienen perfiles profesionales/técnicos especializados en el tema?","38- ¿Tienen definido un modelo de datos?","39 ¿Qué tan bien documentados están los datos?","40 ¿Tienen documentación del modelo de datos que defina...","41- ¿Tienen personas trabajando que se especialicen en el tema?","Sugerencias"], axis=1)
+
+
 
 df.to_csv('respuesta_final.csv', index=False, encoding='utf-8',sep=',')
+
 df2 = pd.read_csv("respuesta_final.csv", names=colnames,index_col=False, encoding='utf-8')
+
 df2 = df2.drop(labels=0, axis=0)
 df2 = df2.fillna('None')  ## cambio los NaN por 0's
 df2.to_csv('Responses.csv', index=False, encoding='utf-8',sep=',')
+
 
 # Aislo el organismo emisor de las respuestas
 organismos  = df2[['fecha','score','nombre_apellido','pertenece_gcba' ,'mail','cargo','secre_subse_area']]
@@ -223,6 +274,7 @@ var_dim9 = ['p35_interc_dat','p36_mecan_prop_comp_dat','p37_pers_espec_reut_dat'
 var_dim10 = ['p38_model_dat','p39_grad_documen_dat','p40_documen_mod_dat','p41_pers_espec_model_dat']
 
 df_dim = pd.read_csv("Scores_Totales.csv",index_col=False, encoding='utf-8',sep=';')
+df_dim.fillna(0, inplace=True)
 
 #print(df_dim.index,"///////////")
     
@@ -441,8 +493,15 @@ for i in df_dim.index:
     total_dim2  = (sum_dim2  / (len(var_dim2) - noaplica_dim2))  *   len(var_dim2) 
     total_dim3  = (sum_dim3  / (len(var_dim3) - noaplica_dim3))  *   len(var_dim3)  
     total_dim4  = (sum_dim4  / (len(var_dim4) - noaplica_dim4))  *   len(var_dim4)  
-    total_dim5  = (sum_dim5  / (len(var_dim5) - noaplica_dim5))  *   len(var_dim5)  
-    total_dim6  = (sum_dim6  / (len(var_dim6) - noaplica_dim6))  *   len(var_dim6)  
+    total_dim5  = (sum_dim5  / (len(var_dim5) - noaplica_dim5))  *   len(var_dim5) 
+    
+    
+    jj = (len(var_dim6) - noaplica_dim6)
+    if jj == 0:
+        total_dim6 = 0
+    else:
+        total_dim6  = (sum_dim6  / (len(var_dim6) - noaplica_dim6))  *   len(var_dim6)  
+        
     total_dim7  = (sum_dim7  / (len(var_dim7) - noaplica_dim7))  *   len(var_dim7)  
     total_dim8  = (sum_dim8  / (len(var_dim8) - noaplica_dim8))  *   len(var_dim8)  
     total_dim9  = (sum_dim9  / (len(var_dim9) - noaplica_dim9))  *   len(var_dim9)  
@@ -460,9 +519,9 @@ for i in df_dim.index:
     print("dimension 10:"+str(total_dim10))
     print("-----final de un registro---------------------")
 
+    #p.write(df_dim['fecha'][i]+";"+df_dim['nombre_apellido'][i]+";"+df_dim['mail'][i]+";"+str(df_dim['cargo'][i])+";"+str(df_dim['secre_subse_area'][i])) # +";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+"\n")
     
-    p.write(df_dim['fecha'][i]+";"+df_dim['nombre_apellido'][i]+";"+df_dim['mail'][i]+";"+df_dim['cargo'][i]+";"+df_dim['secre_subse_area'][i]+";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+"\n")
-    #p.write(df_dim["area"][i]+";"+df_dim["nombre_preg_codigo"][i]+";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+"\n")       
+    p.write(df_dim['fecha'][i]+";"+df_dim['nombre_apellido'][i]+";"+df_dim['mail'][i]+";"+str(df_dim['cargo'][i])+";"+str(df_dim['secre_subse_area'][i])+";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+"\n")
          
 
 p.close()    
