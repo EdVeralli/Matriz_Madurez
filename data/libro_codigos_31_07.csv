@@ -61,8 +61,8 @@ p15_disp_dat,2- Están disponibles para áreas externas,2,Están disponibles par
 p15_disp_dat,3- Están disponibles para áreas internas y externas,3,Están disponibles para áreas internas y externas
 p15_disp_dat,4- No están disponibles,4,No están disponibles
 p15_disp_dat,99- No sabe,99,No sabe
-p16_lect_dat_stand,1- Todos los datos se pueden leer en alguno/s de los formatos antes mencionados,1,Todos los datos se pueden leer en alguno/s de los formatos antes mencionados
-p16_lect_dat_stand,2- Algunos de los datos se pueden leer en alguno/s de los formatos antes mencionados,2,Algunos de los datos se pueden leer en alguno/s de los formatos antes mencionados
+p16_lect_dat_stand,1- Todos los datos se pueden leer en alguno/s de los formatos antes mencionados.,1,Todos los datos se pueden leer en alguno/s de los formatos antes mencionados.
+p16_lect_dat_stand,2- Algunos de los datos se pueden leer en alguno/s de los formatos antes mencionados.,2,Algunos de los datos se pueden leer en alguno/s de los formatos antes mencionados.
 p16_lect_dat_stand,3- Ninguno de los datos se pueden leer en alguno de los formatos antes mencionados,3,Ninguno de los datos se pueden leer en alguno de los formatos antes mencionados
 p16_lect_dat_stand,4- No aplica porque no está dentro de las tareas del área publicar y/o abrir datos,-1,No aplica porque no está dentro de las tareas del área publicar y/o abrir datos
 p16_lect_dat_stand,99- No sabe,99,No sabe
@@ -121,8 +121,8 @@ p29_report_acc_dat,99- No sabe,99,No sabe
 p30_sist_acc_info,1- Si,1,Si
 p30_sist_acc_info,2- No,2,No
 p30_sist_acc_info,99- No sabe,99,No sabe
-p31_revis_cal_dat,1- En forma permanente y regular,1,En forma permanente y regular
-p31_revis_cal_dat,2- Algunas veces al mes,2,Algunas veces al mes
+p31_revis_cal_dat,1- En forma permanente y regular.,1,En forma permanente y regular.
+p31_revis_cal_dat,2- Algunas veces al mes.,2,Algunas veces al mes.
 p31_revis_cal_dat,3- No se hacen controles,3,No se hacen controles
 p31_revis_cal_dat,4- No aplica porque no está dentro de las tareas hacer seguimiento sobre la calidad de los datos,-1,No aplica porque no está dentro de las tareas hacer seguimiento sobre la calidad de los datos
 p31_revis_cal_dat,99- No sabe,99,No sabe
@@ -162,10 +162,10 @@ p38_model_dat,1- Si,1,Si
 p38_model_dat,2- No,2,No
 p38_model_dat,3- No,-1,No aplica porque no está dentro de las tareas definir el modelado de los datos
 p38_model_dat,99- No sabe,99,No sabe
-p39_grad_documen_dat,1- Existen datos pero no hay documentación de descripciones o variables codificadas,1,Existen datos pero no hay documentación de descripciones o variables codificadas
-p39_grad_documen_dat,2- Existe un diccionario de datos (con variables y categorías definidas),2,Existe un diccionario de datos (con variables y categorías definidas)
-p39_grad_documen_dat,"3- Existe un diccionario de datos, que incluye metadatos y las condiciones en las que se capturaron los datos",3,"Existe un diccionario de datos, que incluye metadatos y las condiciones en las que se capturaron los datos"
-p39_grad_documen_dat,"4- Existe un diccionario de datos que incluye metadatos y supuestos realizados en la recolección, qué datos no se recolectaron y potenciales sesgos",4,"Existe un diccionario de datos que incluye metadatos y supuestos realizados en la recolección, qué datos no se recolectaron y potenciales sesgos"
+p39_grad_documen_dat,1- Existen datos pero no hay documentación de descripciones o variables codificadas.,1,Existen datos pero no hay documentación de descripciones o variables codificadas.
+p39_grad_documen_dat,2- Existe un diccionario de datos (con variables y categorías definidas).,2,Existe un diccionario de datos (con variables y categorías definidas).
+p39_grad_documen_dat,"3- Existe un diccionario de datos, que incluye metadatos y las condiciones en las que se capturaron los datos.",3,"Existe un diccionario de datos, que incluye metadatos y las condiciones en las que se capturaron los datos."
+p39_grad_documen_dat,"4- Existe un diccionario de datos que incluye metadatos y supuestos realizados en la recolección, qué datos no se recolectaron y potenciales sesgos.",4,"Existe un diccionario de datos que incluye metadatos y supuestos realizados en la recolección, qué datos no se recolectaron y potenciales sesgos."
 p39_grad_documen_dat,5- Nada documentados,5,Nada documentados
 p39_grad_documen_dat,6- No aplica porque no está dentro de las tareas definir el modelado de los datos,-1,No aplica porque no está dentro de las tareas definir el modelado de los datos
 p39_grad_documen_dat,99- No sabe,99,No sabe
