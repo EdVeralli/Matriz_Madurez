@@ -87,9 +87,14 @@ for i in range(len(scores)):
      Calidad_de_los_datos_int              = float(Calidad_de_los_datos)                         
      Reutilizacion_de_datos_int            = float(Reutilizacion_de_datos)                        
      Modelo_de_datos_int                   = float(Modelo_de_datos)
+     
 
+     cant_dim = scores.iloc[i]['Dim_validas']
+
+   
+     
      Suma = Fuente_de_informacion_Integracion_int + Ciencia_de_datos_int + Actualidad_de_Reportes_productos_int+Disponibilizacion_int +Proteccion_de_datos_int +Gobernanza_de_datos_int +Gestion_de_acceso_a_datos_int+Calidad_de_los_datos_int+Reutilizacion_de_datos_int +Modelo_de_datos_int                   
-     Promedio = Suma / 10
+     Promedio = Suma / cant_dim
 
      if Fuente_de_informacion_Integracion_int == 0:
         nivel_dim1 = "Cero"
@@ -375,6 +380,23 @@ for i in range(len(scores)):
      if Promedio >= 4 and Promedio< 6:
          nivel_final = "Mejora continua"
          texto_final = "Indica que la organización implementa constantemente mecanismos para la buena gestion de los datos, busca  aprender de las experiencias, auditar y revisar los procesos y compartir las mejores practicas. Estas acciones demuestran un enfoque constante en la mejora y la optimizacion de las practicas de tratamiento de datos, lo que permite a la organizacion seguir evolucionando y alcanzar niveles mas altos de madurez en el futuro"
+
+
+     p7_area_cienc_dat = str(scores.iloc[i]['p7'])
+     p12_tien_report = str(scores.iloc[i]['p12'])
+     p38_model_dat = str(scores.iloc[i]['p38'])
+     
+     if int(p7_area_cienc_dat)  == -1:
+         texto_dim2 = "Esta dimensión no será considerada debido a que respondió que no la aplica en su área"
+
+        
+     if int(p12_tien_report)  == -1:
+         texto_dim3 = "Esta dimensión no será considerada debido a que respondió que no la aplica en su área"
+
+        
+     if int(p38_model_dat)  == -1:
+         texto_dim10 = "Esta dimensión no será considerada debido a que respondió que no la aplica en su área"
+   
 
      p.write(str(i+1)+";"+Fecha+";"+NombreApellido+";"+mail+";"+cargo+";"+Organismo+
             ";"+str(Fuente_de_informacion_Integracion_int).replace(".", ",")+";"+nivel_dim1+";"+texto_dim1+  \

@@ -1,3 +1,3 @@
-Fecha;NombreApellido;mail;cargo;Organismo;Fuente de información/Integración;Ciencia de datos;Actualidad de Reportes/productos;Disponibilización;Protección de datos;Gobernanza de datos;Gestión de acceso a datos;Calidad de los datos;Reutilización de datos;Modelo de datos
-2023-10-04 13:54:59;Moni;m_moreno@buenosaires.gob.ar;Project Manager y analista;SSPPBE;5.0;5.0;3.5;0.0;3.8;5.0;5.0;2.4;2.0;1.5
-2023-10-04 15:07:21;Moni 2;m_moreno@buenosaires.gob.ar;PM;0;5.0;0.0;3.5;0.0;3.5999999999999996;4.0;0.0;3.4;2.0;0.0
+Fecha;NombreApellido;mail;cargo;Organismo;Fuente de información/Integración;Ciencia de datos;Actualidad de Reportes/productos;Disponibilización;Protección de datos;Gobernanza de datos;Gestión de acceso a datos;Calidad de los datos;Reutilización de datos;Modelo de datos;Dim_validas;p7;p12;p38
+2023-10-26 16:41:19;MONI 4;m_moreno@buenosaires.gob.ar;PM;SSPPBE;0.0;0.0;0.0;0.0;3.5;0;0.0;0.0;0;0.0;7;-1;-1;-1
+2023-10-26 16:54:52;MONI 5;m_moreno@buenosaires.gob.ar;PM;SSPPBE;0.0;0.0;0.0;0.0;3.5;0;5.0;0.0;0;0.0;7;-1;-1;-1

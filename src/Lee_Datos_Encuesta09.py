@@ -32,9 +32,12 @@ varnames = ['varpunkt_p1','varpunkt_p2','varpunkt_p3','varpunkt_p4','varpunkt_p5
 
 #df = pd.read_excel('Capacidades de datos-Matriz de Madurez 2023_19_10_2023.xlsx')
 
-df = pd.read_excel('primera_descarga_del_sitio_Web.xlsx')
+df = pd.read_excel('bajada_de_Drupal_para_Edu.xlsx')
 
 
+p7_area_cienc_dat  = 0
+p12_tien_report = 0
+p38_model_dat  = 0
 
 
 #df = pd.read_excel('Matriz - pruebas.xlsx')
@@ -66,7 +69,7 @@ df = df.drop(['Notes'], axis=1)
 df = df.drop(['Submitted to: Entity title'], axis=1)
 df = df.drop(['Submitted to: Entity URL'], axis=1)
 df = df.drop(['Serial number'], axis=1)
-df = df.drop(['Nombre de la CIudad'], axis=1)
+df = df.drop(['Nombre de la Ciudad'], axis=1)
 df = df.drop(['País'], axis=1)
 df = df.drop(['Institución/empresa'], axis=1)
 df = df.drop(['¿Cuál es el nombre del área de gobierno a la que pertenece (Coordinación, Dirección, etc)?  '], axis=1)
@@ -261,7 +264,7 @@ Aca la lectura de los puntajes , acumular x cada dimension y generar CSV resulta
 """
 
 p = open("Score_Final.csv", "w")
-Score_Final_titulo = 'Fecha'+";"+"NombreApellido"+";"+"mail"+";"+'cargo'+";"+"Organismo"+";"+'Fuente de información/Integración'+';'+'Ciencia de datos'+';'+'Actualidad de Reportes/productos'+';'+'Disponibilización'+';'+'Protección de datos'+";"+'Gobernanza de datos'+';'+'Gestión de acceso a datos'+';'+'Calidad de los datos'+';'+'Reutilización de datos'+';'+'Modelo de datos'
+Score_Final_titulo = 'Fecha'+";"+"NombreApellido"+";"+"mail"+";"+'cargo'+";"+"Organismo"+";"+'Fuente de información/Integración'+';'+'Ciencia de datos'+';'+'Actualidad de Reportes/productos'+';'+'Disponibilización'+';'+'Protección de datos'+";"+'Gobernanza de datos'+';'+'Gestión de acceso a datos'+';'+'Calidad de los datos'+';'+'Reutilización de datos'+';'+'Modelo de datos'+';'+'Dim_validas'+';'+'p7'+';'+'p12'+';'+'p38'
 p.write(Score_Final_titulo+"\n")
 
 
@@ -570,6 +573,18 @@ for i in df_dim.index:
     # total_dim8  = (sum_dim8  / (len(var_dim8) - noaplica_dim8))  *   len(var_dim8)  
     # total_dim9  = (sum_dim9  / (len(var_dim9) - noaplica_dim9))  *   len(var_dim9)  
     # total_dim10 = (sum_dim10 / (len(var_dim10)- noaplica_dim10)) *   len(var_dim10)
+    dim_validas = 10
+    
+    if int(p7_area_cienc_dat)  == -1:
+        dim_validas = dim_validas -1
+        
+    if int(p12_tien_report)  == -1:
+        dim_validas = dim_validas -1
+        
+    if int(p38_model_dat)  == -1:
+        dim_validas = dim_validas -1       
+    
+
    
     print("dimension 1:"+str(total_dim1))
     print("dimension 2:"+str(total_dim2))
@@ -585,7 +600,7 @@ for i in df_dim.index:
 
     #p.write(df_dim['fecha'][i]+";"+df_dim['nombre_apellido'][i]+";"+df_dim['mail'][i]+";"+str(df_dim['cargo'][i])+";"+str(df_dim['secre_subse_area'][i])) # +";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+"\n")
     
-    p.write(df_dim['fecha'][i]+";"+df_dim['nombre_apellido'][i]+";"+df_dim['mail'][i]+";"+str(df_dim['cargo'][i])+";"+str(df_dim['secre_subse_area'][i])+";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+"\n")
+    p.write(df_dim['fecha'][i]+";"+df_dim['nombre_apellido'][i]+";"+df_dim['mail'][i]+";"+str(df_dim['cargo'][i])+";"+str(df_dim['secre_subse_area'][i])+";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+";"+str(dim_validas)+";"+str(p7_area_cienc_dat)+';'+str(p12_tien_report)+';'+str(p38_model_dat) +"\n")
          
 
 p.close()    
