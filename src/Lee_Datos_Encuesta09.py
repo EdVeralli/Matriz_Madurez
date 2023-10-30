@@ -32,7 +32,7 @@ varnames = ['varpunkt_p1','varpunkt_p2','varpunkt_p3','varpunkt_p4','varpunkt_p5
 
 #df = pd.read_excel('Capacidades de datos-Matriz de Madurez 2023_19_10_2023.xlsx')
 
-df = pd.read_excel('bajada_de_Drupal_para_Edu.xlsx')
+df = pd.read_excel('bajada_de_Drupal_para_Edu_varios_NO_APLICA.xlsx')
 
 
 p7_area_cienc_dat  = 0
@@ -190,11 +190,17 @@ p.write(titulo_puntaje+"\n")
 
 lista_noaplica = []
 
+lista_anula_p7  = []
+lista_anula_p12 = []
+lista_anula_p38 = []
+
 for i in df4.index: 
      if i==0:
          continue
 
-     for k in varnames:
+     
+     
+     for k in varnames: ## limpio las variables
          myStr = k
          myTemplate = "{} = {} " 
          statement = myTemplate.format(myStr, 0)
@@ -217,13 +223,25 @@ for i in df4.index:
          myTemplate = "{} = \"{}\""
          statement = myTemplate.format(myStr, myVal)
          f.write(statement+"\n")
+
          
          if "-1" in statement:
-             print("***No Aplica..",statement)
+             #print("***No Aplica..",statement)
              asacar = statement.replace(' = "-1"',"")
-             lista_noaplica.append(str(i-1)+"-"+asacar) 
+             lista_noaplica.append(str(i-1)+"-"+asacar)
              
-         exec(statement)    
+             if asacar == "p7_area_cienc_dat":
+                lista_anula_p7.append(i-1)
+             if asacar == "p12_tien_report":
+                lista_anula_p12.append(i-1)
+             if asacar == "p38_model_dat":
+                lista_anula_p38.append(i-1)
+             
+             #ys.exit()
+             
+         exec(statement) 
+         #sys.exit()
+         
          for t in lista_acciones:
              exec(t)
 
@@ -232,14 +250,16 @@ for i in df4.index:
          myTemplate = "{} = {} " 
          statement = myTemplate.format(myStr, 0)
          p.write(str(eval(k))+";")
+         #print(str(eval(k))+";")  
 
-     p.write( "\t- "+"\n")       
+     p.write( "\t- "+"\n")
+     #sys.exit()
+    
 
    
    
 f.close()    
 p.close()    
-
 
 
 """
@@ -285,8 +305,12 @@ df_dim.fillna(0, inplace=True)
 #print(df_dim.index,"///////////")
     
 for i in df_dim.index: 
-    #print(i,"la i")
-
+    print(i,"la********************* i")
+    
+    p7_area_cienc_dat = 0
+    p12_tien_report = 0
+    p38_model_dat = 0
+    
     noaplica_dim1 = 0
     noaplica_dim2 = 0
     noaplica_dim3 = 0
@@ -300,7 +324,6 @@ for i in df_dim.index:
     
     lista_noaplica2 = []
     for u in lista_noaplica:
-        #print(u,"ññññññññññññ")
         lugar = u.find("-")
         fila = int(u[:lugar])
         token = u[lugar+1:]
@@ -356,10 +379,10 @@ for i in df_dim.index:
         else :
             command = k
     
-        print(k,"k")
-        print(i,"i")
-        print(df_dim[k][i],"df_dim[k][i]")
-        print("***************************")
+        # print(k,"k")
+        # print(i,"i")
+        # print(df_dim[k][i],"df_dim[k][i]")
+        # print("***************************")
         #sys.exit()
         
         
@@ -546,46 +569,21 @@ for i in df_dim.index:
         total_dim10 = 0
 
 
-
-
-
-
-
-    # total_dim2  = (sum_dim2  / (len(var_dim2) - noaplica_dim2))  *   len(var_dim2) 
-    # total_dim3  = (sum_dim3  / (len(var_dim3) - noaplica_dim3))  *   len(var_dim3)  
-    # total_dim4  = (sum_dim4  / (len(var_dim4) - noaplica_dim4))  *   len(var_dim4)  
-    # total_dim5  = (sum_dim5  / (len(var_dim5) - noaplica_dim5))  *   len(var_dim5) 
-    
-    
-    # # jj = (len(var_dim6) - noaplica_dim6)
-    # # if jj == 0:
-    # #     total_dim6 = 0
-    # # else:
-        
-    # print("sum_dim6",sum_dim6)
-    # print("len(var_dim6)",len(var_dim6))
-    # print("noaplica_dim6",noaplica_dim6)
-    # print("(len(var_dim6) - noaplica_dim6)",(len(var_dim6) - noaplica_dim6))
-    
-    # total_dim6  = (sum_dim6  / (len(var_dim6) - noaplica_dim6))  *   len(var_dim6)  
-        
-    # total_dim7  = (sum_dim7  / (len(var_dim7) - noaplica_dim7))  *   len(var_dim7)  
-    # total_dim8  = (sum_dim8  / (len(var_dim8) - noaplica_dim8))  *   len(var_dim8)  
-    # total_dim9  = (sum_dim9  / (len(var_dim9) - noaplica_dim9))  *   len(var_dim9)  
-    # total_dim10 = (sum_dim10 / (len(var_dim10)- noaplica_dim10)) *   len(var_dim10)
     dim_validas = 10
     
-    if int(p7_area_cienc_dat)  == -1:
+    if i in lista_anula_p7:
         dim_validas = dim_validas -1
-        
-    if int(p12_tien_report)  == -1:
-        dim_validas = dim_validas -1
-        
-    if int(p38_model_dat)  == -1:
-        dim_validas = dim_validas -1       
-    
+        p7_area_cienc_dat = -1
 
-   
+    if i in lista_anula_p12:
+        dim_validas = dim_validas -1
+        p12_tien_report = -1        
+     
+    if i in lista_anula_p38:
+        dim_validas = dim_validas -1
+        p38_model_dat = -1
+
+
     print("dimension 1:"+str(total_dim1))
     print("dimension 2:"+str(total_dim2))
     print("dimension 3:"+str(total_dim3))
@@ -598,10 +596,7 @@ for i in df_dim.index:
     print("dimension 10:"+str(total_dim10))
     print("-----final de un registro---------------------")
 
-    #p.write(df_dim['fecha'][i]+";"+df_dim['nombre_apellido'][i]+";"+df_dim['mail'][i]+";"+str(df_dim['cargo'][i])+";"+str(df_dim['secre_subse_area'][i])) # +";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+"\n")
-    
     p.write(df_dim['fecha'][i]+";"+df_dim['nombre_apellido'][i]+";"+df_dim['mail'][i]+";"+str(df_dim['cargo'][i])+";"+str(df_dim['secre_subse_area'][i])+";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+";"+str(dim_validas)+";"+str(p7_area_cienc_dat)+';'+str(p12_tien_report)+';'+str(p38_model_dat) +"\n")
          
-
 p.close()    
 print("-----final del Proceso-------------------")
