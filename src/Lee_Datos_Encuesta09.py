@@ -32,7 +32,7 @@ varnames = ['varpunkt_p1','varpunkt_p2','varpunkt_p3','varpunkt_p4','varpunkt_p5
 
 #df = pd.read_excel('Capacidades de datos-Matriz de Madurez 2023_19_10_2023.xlsx')
 
-df = pd.read_excel('bajada_de_Drupal_para_Edu_varios_NO_APLICA.xlsx')
+df = pd.read_excel('Promedio 6 desde Drupal.xlsx')
 
 
 p7_area_cienc_dat  = 0
@@ -284,7 +284,7 @@ Aca la lectura de los puntajes , acumular x cada dimension y generar CSV resulta
 """
 
 p = open("Score_Final.csv", "w")
-Score_Final_titulo = 'Fecha'+";"+"NombreApellido"+";"+"mail"+";"+'cargo'+";"+"Organismo"+";"+'Fuente de información/Integración'+';'+'Ciencia de datos'+';'+'Actualidad de Reportes/productos'+';'+'Disponibilización'+';'+'Protección de datos'+";"+'Gobernanza de datos'+';'+'Gestión de acceso a datos'+';'+'Calidad de los datos'+';'+'Reutilización de datos'+';'+'Modelo de datos'+';'+'Dim_validas'+';'+'p7'+';'+'p12'+';'+'p38'
+Score_Final_titulo = 'Fecha'+";"+"NombreApellido"+";"+"mail"+";"+'cargo'+";"+"Organismo"+";"+'Fuente de información/Integración'+';'+'Ciencia de datos'+';'+'Actualidad de Reportes/productos'+';'+'Disponibilización'+';'+'Protección de datos'+";"+'Gobernanza de datos'+';'+'Gestión de acceso a datos'+';'+'Calidad de los datos'+';'+'Reutilización de datos'+';'+'Modelo de datos'+';'+'Dim_validas'+';'+'p7'+';'+'p12'+';'+'p38'+';'+"Diff>2"+';'+"Hay Zeros"
 p.write(Score_Final_titulo+"\n")
 
 
@@ -520,51 +520,62 @@ for i in df_dim.index:
    
     if (len(var_dim1) - noaplica_dim1) >0:
         total_dim1  = (sum_dim1  / (len(var_dim1) - noaplica_dim1))  *   len(var_dim1)
+        total_dim1 = min(total_dim1, 5)
+
     else:
         total_dim1 = 0
 
     if (len(var_dim2) - noaplica_dim2) >0:
         total_dim2  = (sum_dim2  / (len(var_dim2) - noaplica_dim2))  *   len(var_dim2)
+        total_dim2 = min(total_dim2, 5)
     else:
         total_dim2 = 0
 
     if (len(var_dim3) - noaplica_dim3) >0:
         total_dim3  = (sum_dim3  / (len(var_dim3) - noaplica_dim3))  *   len(var_dim3)
+        total_dim3 = min(total_dim3, 5)
     else:
         total_dim3 = 0
 
     if (len(var_dim4) - noaplica_dim4) >0:
         total_dim4  = (sum_dim4  / (len(var_dim4) - noaplica_dim4))  *   len(var_dim4)
+        total_dim4 = min(total_dim4, 5)
     else:
         total_dim4 = 0
 
     if (len(var_dim5) - noaplica_dim5) >0:
         total_dim5  = (sum_dim5  / (len(var_dim5) - noaplica_dim5))  *   len(var_dim5)
+        total_dim5 = min(total_dim5, 5)
     else:
         total_dim5 = 0
 
     if (len(var_dim6) - noaplica_dim6) >0:
         total_dim6  = (sum_dim6  / (len(var_dim6) - noaplica_dim6))  *   len(var_dim6)
+        total_dim6 = min(total_dim6, 5)
     else:
         total_dim6 = 0
 
     if (len(var_dim7) - noaplica_dim7) >0:
         total_dim7  = (sum_dim7  / (len(var_dim7) - noaplica_dim7))  *   len(var_dim7)
+        total_dim7 = min(total_dim7, 5)
     else:
         total_dim7 = 0
 
     if (len(var_dim8) - noaplica_dim8) >0:
         total_dim8  = (sum_dim8  / (len(var_dim8) - noaplica_dim8))  *   len(var_dim8)
+        total_dim8 = min(total_dim8, 5)
     else:
         total_dim8 = 0
 
     if (len(var_dim9) - noaplica_dim9) >0:
         total_dim9  = (sum_dim9  / (len(var_dim9) - noaplica_dim9))  *   len(var_dim9)
+        total_dim9 = min(total_dim9, 5)
     else:
         total_dim9 = 0
 
     if (len(var_dim10) - noaplica_dim10) >0:
         total_dim10  = (sum_dim10  / (len(var_dim10) - noaplica_dim10))  *   len(var_dim10)
+        total_dim10 = min(total_dim10, 5)
     else:
         total_dim10 = 0
 
@@ -596,7 +607,30 @@ for i in df_dim.index:
     print("dimension 10:"+str(total_dim10))
     print("-----final de un registro---------------------")
 
-    p.write(df_dim['fecha'][i]+";"+df_dim['nombre_apellido'][i]+";"+df_dim['mail'][i]+";"+str(df_dim['cargo'][i])+";"+str(df_dim['secre_subse_area'][i])+";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+";"+str(dim_validas)+";"+str(p7_area_cienc_dat)+';'+str(p12_tien_report)+';'+str(p38_model_dat) +"\n")
+    vector = [total_dim1, total_dim2, total_dim3, total_dim4, total_dim5,total_dim6, total_dim7, total_dim8, total_dim9, total_dim10 ]
+    diff_gt_2 = "No"
+    hay_zero  = "No"
+    # Itera sobre los elementos del vector tomando de a pares para ver las diff >2 y zeros
+    for ii in range(len(vector)-1):
+        if vector[ii] < 0.1:
+           hay_zero  = "Si" 
+        for j in range(ii+1, len(vector)):
+            resta = vector[ii] - vector[j]
+            if abs(resta) > 2:
+               diff_gt_2 = "Si"
+
+    p.write(df_dim['fecha'][i]+";"+df_dim['nombre_apellido'][i]+";"+df_dim['mail'][i]+";"+str(df_dim['cargo'][i])+";"+str(df_dim['secre_subse_area'][i])+";"+str(total_dim1)+";"+str(total_dim2)+";"+str(total_dim3)+";"+str(total_dim4)+";"+str(total_dim5)+";"+str(total_dim6)+";"+str(total_dim7)+";"+str(total_dim8)+";"+str(total_dim9)+";"+str(total_dim10)+";"+str(dim_validas)+";"+str(p7_area_cienc_dat)+';'+str(p12_tien_report)+';'+str(p38_model_dat) +';'+diff_gt_2+';'+hay_zero+"\n")
          
 p.close()    
 print("-----final del Proceso-------------------")
+
+
+
+
+# nueva_columna = [1, 2, 3]
+
+# # Índice en el que deseas insertar la nueva columna (por ejemplo, después de 'Edad')
+# indice_insercion = df.columns.get_loc('Edad') + 1
+
+# # Insertar la nueva columna en el DataFrame
+# df.insert(indice_insercion, 'Nueva_Columna', nueva_columna)
